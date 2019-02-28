@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#bookBox {
+  width: 620px;
+  height: 360px;
+  background: #f6f6f6;
+  margin-left: 60px;
+  margin-top: 150px;
+  position: relative;
+}
+#bookBox p {
+  color: #B8AA9D;
+  font-size: 38px;
+  margin-left: 50px;
+  line-height: 80px;
+}
+#bookBox #msg {
+  width: 400px;
+  height: 295px;
+  position: absolute;
+  right: 30px;
+  margin-top: 15px;
+  color: #7a7a7a;
+}
+#bookBox #msg .msgRow {
+  width: 380px;
+  height: 50px;
+}
+#bookBox #msg .msgRow span {
+  width: 90px;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+}
+#bookBox #msg .msgRow select,
+#bookBox #msg .msgRow input {
+  width: 260px;
+  height: 32px;
+  display: inline-block;
+  color: #393939;
+}
+#bookBox #msg #customBtn {
+  width: 260px;
+  height: 38px;
+  background: #B8AA9D;
+  border-radius: 5%;
+  margin-left: 95px;
+  text-align: center;
+  line-height: 38px;
+  margin-top: 15px;
+}
+#bookBox #msg #customBtn a {
+  text-decoration: none ;
+  color: #fdfdfd;
+  font-size: 18px;
+}
+/*# sourceMappingURL=customMade.css.map */

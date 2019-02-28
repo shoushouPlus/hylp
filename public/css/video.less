@@ -1,0 +1,784 @@
+
+
+//导航栏样式
+#top{
+  width: 1519px;
+  height: 62px;
+  background: black;
+  //border: 1px solid white;
+}
+#nav {
+  width: 1366px;
+  height: 62px;
+  margin: 0 auto;
+  background: black;
+  position: relative;
+  //导航内容
+  ul {
+    width: 1000px;
+    height: 62px;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 320px;
+    margin-bottom: 0;
+
+    li {
+      width: 80px;
+      height: 62px;
+      float: left;
+      color: white;
+      line-height: 62px;
+      text-align: center;
+      a {
+        text-decoration:none;
+        outline: none;
+        color: white;
+      }
+      &:hover{
+        background: whitesmoke;
+        color:#B8AA9D ;
+        cursor: pointer;
+        z-index: 33;
+
+        a {
+          color: #B8AA9D ;
+        }
+      }
+
+    }
+  }
+}
+#landing{
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+
+}
+#registered{
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  cursor: pointer;
+
+}
+#ball{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  cursor: pointer;
+  display: none;
+  z-index: 66;
+  color: white;
+}
+#exit{
+  position: absolute;
+  top: 20px;
+  right: 0;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+
+#box1{
+  width: 1366px;
+  height: 750px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#div1{
+  width: 150px;
+  height: 62px;
+  background: black;
+
+  h2{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    font-size: 27px;
+    color: white;
+    margin-top: 0;
+  }
+  p{
+    position: absolute;
+    left: 34px;
+    top: 38px;
+    color: white;
+  }
+}
+//登陆注册
+#down{
+  width: 80px;
+  height: 30px;
+  position: absolute;
+  left:557px;
+  z-index:999;
+  display: none;
+
+  ul{
+    width: 80px;
+    height: 90px;
+    background: black;
+
+  }
+  li{
+    width:80px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+
+    a {
+      text-decoration:none;
+      outline: none;
+      color: white;
+
+      &:hover{
+        color: #B8AA9D;
+        cursor:pointer
+      }
+    }
+    &:hover{
+      background: white;
+      color:#B8AA9D ;
+
+
+      a{
+        color: #B8AA9D;
+      }
+    }
+  }
+
+}
+
+//登陆框
+.ccc1{
+  width: 100%;
+  height: 100%;
+  background: rgba(55, 55, 55, 0.67);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  display: none;
+
+
+  #login{
+    width: 360px;
+    height: 460px;
+    background: whitesmoke;
+    z-index: 9999;
+    margin: 0 auto;
+    position: fixed;
+    top: 170px;
+    left: 600px;
+
+
+    .close1{
+      font-size: 20px;
+      position: absolute;
+      top: 0;
+      right: 10px;
+      color: #676767;
+      cursor: pointer;
+    }
+    #title1{
+      font-size: 20px;
+      font-weight: bold;
+      position: absolute;
+      top: 40px;
+      left: 30px;
+    }
+    #zs1{
+      font-size: 14px;
+      color: #999999;
+      position: absolute;
+      top: 75px;
+      left: 30px;
+    }
+    #login-phone{
+      width: 300px;
+      height: 50px;
+      position: absolute;
+      top: 130px;
+      left: 30px;
+      border: 1px solid #ccc;
+
+    }
+    #login-code{
+      width: 300px;
+      height: 50px;
+      position: absolute;
+      top: 200px;
+      left: 30px;
+      border: 1px solid #ccc;
+
+
+
+    }
+    #login-getCode{
+      position: absolute;
+      top: 200px;
+      left: 230px;
+      font-size: 14px;
+      cursor: pointer;
+
+
+      #loginBtn{
+        width: 100px;
+        height: 50px;
+
+      }
+    }
+    #login-btn{
+      width: 300px;
+      height: 50px;
+      background: #2C8DFB;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+      position: absolute;
+      left: 30px;
+      top: 280px;
+      cursor: pointer;
+
+      &:hover{
+        background: rgba(44, 141, 251, 0.8);
+      }
+    }
+
+    #login-protocol{
+      color: #a9a9a9;
+      font-size: 13px;
+      position: absolute;
+      left: 30px;
+      bottom: 30px;
+    }
+    #login-getuser{
+      color: #2C8DFB;
+      position: absolute;
+      top: 340px;
+      left: 30px;
+      cursor: pointer;
+    }
+  }
+
+  //正则验证
+  .tipx{
+    font-size: 13px;
+    position: absolute;
+    top: 255px;
+    left: 30px;
+  }
+  .red{
+    color: rgba(255, 0, 0, 0.74);
+  }
+  .green{
+    color: rgba(0, 128, 0, 0.67);
+  }
+}
+
+//注册框
+.ccc2{
+  width: 100%;
+  height: 100%;
+  background: rgba(55, 55, 55, 0.67);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  display: none;
+
+
+
+
+  #join {
+    width: 360px;
+    height: 460px;
+    background: whitesmoke;
+    z-index: 9999;
+    margin: 0 auto;
+    position: fixed;
+    top: 170px;
+    left: 600px;
+
+    .close2 {
+      font-size: 20px;
+      position: absolute;
+      top: 0;
+      right: 10px;
+      color: #676767;
+      cursor: pointer;
+    }
+    #title2 {
+      font-size: 20px;
+      font-weight: bold;
+      position: absolute;
+      top: 40px;
+      left: 30px;
+    }
+    #join-text{
+      position: absolute;
+      top: 46px;
+      left: 200px;
+    }
+    #goLogin{
+      position: absolute;
+      top: 46px;
+      left: 270px;
+      color: #2c8dff;
+      cursor: pointer;
+    }
+    #join-phone{
+      width: 300px;
+      height: 50px;
+      border: 1px solid #ccc;
+      position: absolute;
+      top: 100px;
+      left: 30px;
+    }
+    #join-password{
+      width: 300px;
+      height: 50px;
+      border: 1px solid #ccc;
+      position: absolute;
+      top: 170px;
+      left: 30px;
+    }
+    #join-code{
+      width: 300px;
+      height: 50px;
+      border: 1px solid #ccc;
+      position: absolute;
+      top: 240px;
+      left: 30px;
+    }
+    #join-getcode{
+
+      position: absolute;
+      left: 230px;
+      top: 240px;
+      cursor: pointer;
+
+      #btn{
+        width: 100px;
+        height: 50px;
+      }
+    }
+    #join-checkbox{
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 310px;
+      left: 30px;
+    }
+    #checkbox-value{
+      position: absolute;
+      left: 50px;
+      top: 310px;
+      font-size: 13px;
+      color: #808080;
+    }
+    #join-btn{
+      width: 300px;
+      height: 50px;
+      background: #2C8DFB;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+      position: absolute;
+      left: 30px;
+      top: 370px;
+      cursor: pointer;
+
+      &:hover{
+        background: rgba(44, 141, 251, 0.8);
+      }
+    }
+  }
+  .tipx3{
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    font-size: 13px;
+  }
+  .tipx4{
+    position: absolute;
+    top: 222px;
+    left: 30px;
+    font-size: 13px;
+  }
+  .red{
+    color: red;
+  }
+}
+
+.ccc3{
+  width: 100%;
+  height: 100%;
+  background: rgba(55, 55, 55, 0.67);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  display: none;
+
+  #name{
+    width: 360px;
+    height: 460px;
+    background: whitesmoke;
+    z-index: 9999;
+    margin: 0 auto;
+    position: fixed;
+    top: 170px;
+    left: 600px;
+
+    .close3{
+      font-size: 20px;
+      position: absolute;
+      top: 0;
+      right: 10px;
+      color: #676767;
+      cursor: pointer;
+    }
+    #gojointext{
+      position: absolute;
+      top: 80px;
+      right: 90px;
+    }
+    #gojoin{
+      position: absolute;
+      top: 80px;
+      right: 30px;
+      color: #2C8DFB;
+      cursor: pointer;
+    }
+    #title3{
+      font-size: 20px;
+      font-weight: bold;
+      position: absolute;
+      top: 40px;
+      left: 30px;
+    }
+    #name-user{
+      width: 300px;
+      height: 50px;
+      position: absolute;
+      top: 130px;
+      left: 30px;
+      border: 1px solid #ccc;
+    }
+    #name-password{
+      width: 300px;
+      height: 50px;
+      position: absolute;
+      top: 200px;
+      left: 30px;
+      border: 1px solid #ccc;
+
+    }
+    #name-btn{
+      width: 300px;
+      height: 50px;
+      background: #2C8DFB;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+      position: absolute;
+      left: 30px;
+      top: 280px;
+      cursor: pointer;
+
+      &:hover{
+        background: rgba(44, 141, 251, 0.8);
+      }
+    }
+    #get-login{
+      color: #2C8DFB;
+      position: absolute;
+      left: 30px;
+      top: 350px;
+      cursor: pointer;
+    }
+    #name-p1{
+      position: absolute;
+      left: 30px;
+      bottom: 30px;
+      font-size: 13px;
+      color: #ccc;
+    }
+  }
+  .tipx2{
+    position: absolute;
+    top: 256px;
+    left: 30px;
+    font-size: 13px;
+  }
+  .red{
+    color: red;
+  }
+}
+
+//大图
+#video-div1{
+  width: 100%;
+  height: 600px;
+  position: relative;
+
+  img{
+    width: 100%;
+    height: 600px;
+  }
+  p{
+    position: absolute;
+    top: 455px;
+    left: 720px;
+    font-size: 30px;
+    color: white;
+  };
+  h2{
+    font-size: 44px;
+    position: absolute;
+    top: 20px;
+    left: 600px;
+    color: whitesmoke;
+  }
+}
+
+//视频及介绍
+#video-div2{
+  width: 1366px;
+  height: 600px;
+  background: rgba(204, 204, 204, 0.56);
+  margin: 20px auto;
+  position: relative;
+
+  #video1{
+    width: 1000px;
+    height: 600px;
+
+
+    video{
+      width: 1000px;
+      height: 600px;
+      margin-top: 0;
+    }
+  }
+ h3{
+   font-size: 30px;
+   color: #B8AA9D;
+   position: absolute;
+   top: 60px;
+   right: 60px;
+ }
+  #text1{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 150px;
+    right: 0;
+  }
+  p{
+    margin-top: 20px;
+  }
+}
+
+#video-div3{
+  width: 1366px;
+  height: 600px;
+  background: rgba(204, 204, 204, 0.56);
+  margin: 20px auto;
+  position: relative;
+
+  #video2{
+    width: 1000px;
+    height: 600px;
+
+
+    video{
+      width: 1000px;
+      height: 600px;
+      margin-top: 0;
+    }
+  }
+  h3{
+    font-size: 30px;
+    color: #B8AA9D;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+  }
+  #text2{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 150px;
+    right: 0;
+  }
+  p{
+    margin-top: 20px;
+  }
+}
+
+#video-div4{
+  width: 1366px;
+  height: 600px;
+  background: rgba(204, 204, 204, 0.56);
+  margin: 20px auto;
+  position: relative;
+
+  #video3{
+    width: 1000px;
+    height: 600px;
+
+
+    video{
+      width: 1000px;
+      height: 600px;
+      margin-top: 0;
+    }
+  }
+  h3{
+    font-size: 30px;
+    color: #B8AA9D;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+  }
+  #text3{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 150px;
+    right: 0;
+  }
+  p{
+    margin-top: 20px;
+  }
+}
+
+
+//底部
+#box7{
+  width: 100%;
+  height: 260px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+
+  h3{
+    text-align: center;
+    color: #B8AA9D;
+    font-size: 36px;
+  }
+  p{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+  }
+  div{
+    margin-top: 30px;
+  }
+}
+//联系客服
+#talk{
+  width: 350px;
+  height: 450px;
+  position: fixed;
+  background: white;
+  bottom: 0;
+  right: 0;
+  z-index: 9999999;
+  display: none;
+
+  #talk-div1{
+    width: 350px;
+    height: 40px;
+    background: #2C8DFB;
+    color: white;
+
+    p{
+      font-size: 20px;
+      line-height: 40px;
+      margin-left: 20px;
+    }
+    #talk-close1{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 20px;
+      color: white;
+    }
+  }
+  #talk-div2{
+    width: 350px;
+    height: 300px;
+    background: rgba(204, 204, 204, 0.27);
+  }
+  #talk-div3{
+    width: 350px;
+    height: 100px;
+
+
+    textarea{
+      width: 350px;
+      height: 60px;
+    }
+    button{
+      position: absolute;
+      right: 10px;
+      bottom: 12px;
+      width: 70px;
+      background: #2C8DFB;
+    }
+  }
+}
+
+
+#smoll-talk{
+  width: 240px;
+  height: 50px;
+  background: #2C8DFB;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999999;
+
+
+  #smoll-talk-div1{
+    width: 50px;
+    height: 50px;
+    background: #1471ba;
+
+    span{
+      font-size: 30px;
+      color: white;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  }
+  p{
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    top: 13px;
+    left: 62px;
+  }
+  #talk-close2{
+    position: absolute;
+    top: 16px;
+    right: 12px;
+    font-size: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+
+  }
+}

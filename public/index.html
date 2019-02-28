@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>花漾旅拍</title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./dist/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./dist/swiper-4.4.1/dist/css/swiper.css">
+    <script src="dist/jquery-3.3.1.js"></script>
+</head>
+<body>
+<!--首页视频-->
+<div id="div2">
+    <video src="./image/index_image/bj.mp4" controls="controls" autoplay="autoplay" loop="loop" id="b-video"></video>
+    <h1>HUAYANG</h1>
+    <span>PHOTOGROPHY</span>
+    <p id="p1">
+        HUAYANG PHOTOGROPHY Official website "Heart Record Moved": Elephant
+        Picture New Attitude Photography Model, Heart Record Moved! Committed
+        to creating the first brand of high-end photography in Hunan! Sincerity
+        and trustworthiness impress every customer with high quality
+    </p>
+    <img src="./image/index_image/mouse.png" alt="" id="b_video">
+    <span class="glyphicon glyphicon-menu-down" id="down1"></span>
+    <span class="glyphicon glyphicon-menu-down" id="down2"></span>
+    <a href="#nav"><p id="p2">scroll</p></a>
+</div>
+
+
+
+
+
+<!--导航部分-->
+<div id="top">
+    <!--导航内容-->
+    <div  id="nav">
+        <div id="div1">
+            <h2>花漾旅拍</h2>
+            <p>HUAYANG</p>
+        </div>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="pages/wedding.html">婚纱照</a></li>
+            <li id="l1">私人定制▼</li>
+            <li><a href="pages/lpkp.html">旅拍客片</a></li>
+            <li><a href="pages/video.html">微电影</a></li>
+            <li><a href="javascript:;" class="a">会员中心</a></li>
+            <li><a href="pages/comment.html">客户评价</a></li>
+            <li><a href="pages/aboutUs.html">关于我们</a></li>
+            <li id="l2">联系我们</li>
+        </ul>
+        <p id="landing">登陆/</p>
+        <p id="registered">注册</p>
+
+        <img src="./image/index_image/ball.png" alt="" id="ball">
+        <p id="exit">退出</p>
+    </div>
+
+    <div id="down">
+        <ul>
+            <li><a href="pages/loves.html">情侣</a></li>
+            <li><a href="pages/family.html">家庭照</a></li>
+            <li><a href="pages/friend.html">好友</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--登陆框-->
+<div class="ccc1">
+    <div id="login">
+        <p class="close1">x</p>
+        <p id="title1">手机快捷登陆</p>
+        <p id="zs1">别担心，您的手机号不会泄露</p>
+        <input type="text" id="login-phone" placeholder="请输入手机号"><br>
+        <input type="text" id="login-code" placeholder="请输入验证码">
+        <p id="login-getuser">账号密码登陆</p>
+        <span class="tipx"></span>
+
+        <div onclick="sendwcode2()" id="login-getCode">
+            <input type="button" class="btn" id="loginBtn"
+                   onclick="setTime(this)" value="获取验证码" />
+        </div>
+        <div id="login-btn">登陆</div>
+        <p id="login-protocol">登陆即代表同意《花漾隐私政策》及《花漾用户服务协议》</p>
+    </div>
+</div>
+
+<!--账号密码登陆-->
+<div class="ccc3">
+    <div id="name">
+        <p class="close3">x</p>
+        <p id="title3">账号密码登陆</p>
+        <p id="gojointext">没有账号</p>
+        <p id="gojoin">立即注册</p>
+        <input type="text" id="name-user" placeholder="请输入账号">
+        <input type="password" id="name-password" placeholder="请输入密码">
+        <span class="tipx2"></span>
+        <div id="name-btn">登陆</div>
+        <p id="get-login">手机号快捷登陆</p>
+        <p id="name-p1">登陆即代表同意《花漾隐私政策》及《花漾用户服务协议》</p>
+    </div>
+
+</div>
+<!--注册框-->
+<div class="ccc2">
+    <div id="join">
+        <p class="close2">x</p>
+        <p id="title2">手机号码注册</p>
+        <p id="join-text">已有账号?</p>
+        <p id="goLogin">去登陆</p>
+        <input type="text" id="join-phone" placeholder="请输入手机号">
+        <span class="tipx3"></span>
+        <input type="password" id="join-password" placeholder="请输入密码（至少8位）">
+        <span class="tipx4"></span>
+        <input type="text" id="join-code" placeholder="请输入验证码">
+        <div onclick="sendwcode()" id="join-getcode">
+        <input type="button" class="btn" id="btn"
+               onclick="setTime(this)" value="获取验证码" />
+    </div>
+        <input type="checkbox" name="" id="join-checkbox">
+        <p id="checkbox-value">我已阅读并同意《花漾隐私政策》及《花漾用户服务协议》</p>
+        <div id="join-btn">注册</div>
+    </div>
+</div>
+
+
+<!--大图轮播-->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./image/index_image/banner1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./image/index_image/banner2.png" alt=""></div>
+        <div class="swiper-slide"><img src="./image/index_image/banner3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./image/index_image/banner4.jpg" alt=""></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <!--<div class="swiper-pagination"></div>-->
+
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- 如果需要滚动条 -->
+    <div class="swiper-scrollbar"></div>
+</div>
+
+<!--内容部分-->
+<div id="box1">
+    <!--外景地-->
+    <div id="exterior">
+        <h3>Location</h3>
+        <div id="solid"></div>
+        <h1>花漾旅拍外景地</h1>
+        <p class="p3">花漾旅拍，时尚、随性、自由、轻奢</p>
+        <p class="p3">Earl of Travel, Fashion, Freedom, Luxury, Random</p>
+
+        <!-- Swiper -->
+        <div class="swiper-photo">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+
+                    <div class="s-box">
+                        <img src="./image/index_image/k7.jpg" alt="">
+                        <div class="trans">
+                            <div class="trans-text">
+                                <p class="title-p">马尔代夫</p>
+                                <h4 class="title-h4">Maldives</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s-box">
+                        <img src="./image/index_image/k2.jpg" alt="">
+                        <div class="trans">
+                            <div class="trans-text">
+                                <p class="title-p">大理</p>
+                                <h4 class="title-h4">DaLi</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s-box">
+                        <img src="./image/index_image/k3.jpg" alt="">
+                        <div class="trans">
+                            <div class="trans-text">
+                                <p class="title-p">玉龙雪山</p>
+                                <h4 class="title-h4">YuLong</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+
+                    <div class="s-box">
+                        <img src="./image/index_image/k5.jpg" alt="">
+                        <div class="trans">
+                            <div class="trans-text">
+                                <p class="title-p">桂林</p>
+                                <h4 class="title-h4">GuiLing</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s-box">
+                        <img src="./image/index_image/k4.jpg" alt="">
+                        <div class="trans">
+                            <div class="trans-text">
+                                <p class="title-p">香格里拉</p>
+                                <h4 class="title-h4">XiangGeLiLa</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s-box">
+                        <img src="./image/index_image/k6.jpg" alt="">
+                        <div class="trans">
+                            <div class="trans-text">
+                                <p class="title-p">厦门</p>
+                                <h4 class="title-h4">XiaMen</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+
+                    <div class="s-box">
+                        <img src="./image/index_image/k8.jpg" alt="">
+                        <div class="trans">
+                            <div class="trans-text">
+                                <p class="title-p">峨眉山</p>
+                                <h4 class="title-h4">Emei</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s-box">
+                        <img src="./image/index_image/k2.jpg" alt="">
+                        <div class="trans">
+                            <div class="trans-text">
+                                <p class="title-p">三亚</p>
+                                <h4 class="title-h4">SanYa</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s-box">
+                        <img src="./image/index_image/k3.jpg" alt="">
+                        <div class="trans">
+                            <div class="trans-text">
+                                <p class="title-p">玉龙雪山</p>
+                                <h4 class="title-h4">YuLong</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--客片展示-->
+<div id="box2">
+    <h1>花漾旅拍客片展示</h1>
+    <p class="p2">GOLDE LIDIES PHOTO</p>
+    <div id="photo-box">
+    <!--<div class="div1"><img src="./image/index_image/k1.jpg" alt="">-->
+        <!--<h3>浪漫三亚</h3>-->
+        <!--<p class="p2">GOLDE LIDIES PHOTO</p>-->
+    <!--<div class="div2">-->
+        <!--<p>三亚</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="div1"><img src="./image/index_image/k1.jpg" alt="">-->
+        <!--<h3>浪漫三亚</h3>-->
+        <!--<p class="p2">GOLDE LIDIES PHOTO</p>-->
+        <!--<div class="div2">-->
+            <!--<p>三亚</p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="div1"><img src="./image/index_image/k1.jpg" alt="">-->
+        <!--<h3>浪漫三亚</h3>-->
+        <!--<p class="p2">GOLDE LIDIES PHOTO</p>-->
+        <!--<div class="div2">-->
+            <!--<p>三亚</p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="div1"><img src="./image/index_image/k1.jpg" alt="">-->
+        <!--<h3>浪漫三亚</h3>-->
+        <!--<p class="p2">GOLDE LIDIES PHOTO</p>-->
+        <!--<div class="div2">-->
+            <!--<p>三亚</p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="div1"><img src="./image/index_image/k1.jpg" alt="">-->
+        <!--<h3>浪漫三亚</h3>-->
+        <!--<p class="p2">GOLDE LIDIES PHOTO</p>-->
+        <!--<div class="div2">-->
+            <!--<p>三亚</p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="div1"><img src="./image/index_image/k1.jpg" alt="">-->
+        <!--<h3>浪漫三亚</h3>-->
+        <!--<p class="p2">GOLDE LIDIES PHOTO</p>-->
+        <!--<div class="div2">-->
+            <!--<p>三亚</p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="div1"><img src="./image/index_image/k1.jpg" alt="">-->
+        <!--<h3>浪漫三亚</h3>-->
+        <!--<p class="p2">GOLDE LIDIES PHOTO</p>-->
+        <!--<div class="div2">-->
+            <!--<p>三亚</p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="div1"><img src="./image/index_image/k1.jpg" alt="">-->
+        <!--<h3>浪漫三亚</h3>-->
+        <!--<p class="p2">GOLDE LIDIES PHOTO</p>-->
+        <!--<div class="div2">-->
+            <!--<p>三亚</p>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+    </div>
+<div id="see"><a href="./pages/lpkp.html">点击查看更多</a></div>
+</div>
+
+
+<!--微视频-->
+<div id="box3">
+    <p >I'LL TAKE A STORY FOR YOU</p>
+    <h1>花漾旅拍，双影像旅拍开创者</h1>
+    <p id="p3">我们拍的不仅是照片，还有微电影，为您拍一段故事，记录旅行的美好</p>
+    <div id="video">
+        <div class="swiper-video">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-text">
+                        <video src="./image/index_image/w1.mp4" controls="controls" autoplay="autoplay" loop="loop"></video><p>三亚客户微电影</p></div>
+                    <div class="swiper-text">
+                        <video src="./image/index_image/w2.mp4" controls="controls" autoplay="autoplay" loop="loop"></video><P>丽江客户微电影</P></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-text">
+                        <video src="./image/index_image/w3.mp4" controls="controls" autoplay="autoplay" loop="loop"></video><p>大理客户微电影</p></div>
+                    <div class="swiper-text">
+                        <video src="./image/index_image/w4.mp4" controls="controls" autoplay="autoplay" loop="loop"></video><P>毕棚沟客户微电影</P></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-text">
+                        <video src="./image/index_image/w1.mp4" controls="controls" autoplay="autoplay" loop="loop"></video><p>桂林客户微电影</p></div>
+                    <div class="swiper-text">
+                        <video src="./image/index_image/w5.mp4" controls="controls" autoplay="autoplay" loop="loop"></video><P>九寨沟客户微电影</P></div>
+                </div>
+            </div>
+
+            <!-- Add Arrows -->
+            <div class="swiper-button-next1" ><span class="glyphicon glyphicon-menu-left"></span></div>
+            <div class="swiper-button-prev1" ><span class="glyphicon glyphicon-menu-right"></span></div>
+        </div>
+        <div id="look"><a href="./pages/video.html">点击查看更多</a></div>
+    </div>
+</div>
+
+
+<!--微博评价-->
+<div id="box4">
+    <h1>花漾旅拍</h1>
+    <p id="p4">OUR CUSTOMERS SAY</p>
+    <p id="p5">微博真实评价</p>
+
+    <div class="div4">
+        <div class="div5">
+            <div class="div6">
+            #唯一视觉·花样旅拍#挑选了很多家，最终在选择了我们的花漾旅拍，果然没有让我失望
+            </div>
+        </div>
+        <a href="https://weibo.com/5596541567/profile?rightmod=1&wvr=6&mod=personnumber&is_all=1"><img src="./image/index_image/ball.png" alt="" class="ball"></a>
+        <p>用户：@瘦瘦嗨翻全球</p>
+    </div>
+    <div class="div4">
+        <div class="div5">
+            <div class="div6">
+                #唯一视觉·花样旅拍#花漾旅拍是真的很细心，服务和拍摄都特别的好
+            </div>
+        </div>
+        <img src="./image/index_image/ball3.jpg" alt="" class="ball">
+        <p>用户：@冯大帅</p>
+    </div>
+    <div class="div4">
+        <div class="div5">
+            <div class="div6">
+                #唯一视觉·花样旅拍#经过这么久的挑选，最后在花样旅拍下了单，去拍摄的过程中果然没有让我失望，支持花漾旅拍！
+            </div>
+        </div>
+        <img src="./image/index_image/ball2.png" alt="" class="ball">
+        <p>用户：@921945211</p>
+    </div>
+</div>
+
+
+<!--牌匾-->
+<div id="box5">
+    <div id="div3">
+        <span id="p6">花漾定制</span>
+        <span>高端定制</span>
+    </div>
+
+    <p class="s1">Earl of Travel, Fashion, Freedom, Luxury, Random</p>
+    <div id="div4"></div>
+    <p id="p7">不断打破传统，提升客户体验，为您的照片拍摄保驾护航</p>
+    <p class="s1">Continuously break the tradition, improve the customer experience, and escort your photo shooting</p>
+
+    <div id="box6">
+        <div class="b_border">
+            <div class="s_border">
+                <h4>6大外景纪实风</h4>
+                <p>90后和95后的新式风格照相</p>
+            </div>
+        </div>
+        <div class="b_border">
+            <div class="s_border">
+                <h4>300家以上门店</h4>
+                <p>全国合作连锁</p>
+            </div>
+        </div>
+        <div class="b_border">
+            <div class="s_border">
+                <h4>自选摄影师</h4>
+                <p>摄影师自选更放心</p>
+            </div>
+        </div>
+        <div class="b_border">
+            <div class="s_border">
+                <h4>化妆套装</h4>
+                <p>一次性高定化妆</p>
+                <p>0隐形消费</p>
+            </div>
+        </div>
+        <div class="b_border">
+            <div class="s_border">
+                <h4>重拍承诺</h4>
+                <p>拍照不满意无条件重拍</p>
+                <p>重拍不满意无条件退款</p>
+            </div>
+        </div>
+        <div class="b_border">
+            <div class="s_border">
+                <h4>提前沟通</h4>
+                <p>拍摄前一天沟通拍摄细节</p>
+            </div>
+        </div>
+        <div class="b_border">
+            <div class="s_border">
+                <h4>定制包装</h4>
+                <p>后期成品免费打包</p>
+                <p>专属定制包装</p>
+            </div>
+        </div>
+        <div class="b_border">
+            <div class="s_border">
+                <h4>顺丰送件</h4>
+                <p>安全快捷</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div id="box7">
+    <h3>Hua  Yang PhotoGrophy</h3>
+    <p>时尚 | 自由 | 轻奢 | 随性</p>
+    <p>三亚 / 厦门 / 丽江 / 大理 / 深圳 / 北京 / 上海 / 香港 / 澳门 / 香格里拉 / 桂林 / 杭州 / 大连 / 青岛/</p>
+    <p>成都 / 南充 / 峨眉 / 江油/ 眉山 / 资阳 / 西安 / 六盘水 / 攀枝花 / 广安 / 德阳 / 绵阳 / 遂宁 / 台湾</p>
+   <div>
+    <p>全国免费咨询电话：18881206860 （在线时间9：00-22：00)</p>
+    <p>客服联系微信：fengwei0618 （在线时间9：00-22：00）</p>
+   </div>
+</div>
+
+<!--客服联系-->
+<div id="talk">
+    <div id="talk-div1">
+        <p>花漾旅拍</p>
+        <span class="glyphicon glyphicon-menu-down" id="talk-close1"></span>
+    </div>
+    <div id="talk-div2"></div>
+    <div id="talk-div3">
+        <textarea name="" id="msg" cols="30" rows="10"></textarea>
+        <button type="button" class="btn btn-primary" id="talk-btn">发送</button>
+    </div>
+</div>
+
+<!--缩小后的客服联系-->
+<div id="smoll-talk">
+<div id="smoll-talk-div1">
+    <span class="glyphicon glyphicon-envelope"></span>
+</div>
+    <p>和我们在线交谈</p>
+    <span class="glyphicon glyphicon-menu-up" id="talk-close2"></span>
+</div>
+
+</body>
+<script src="js/indexDist.js"></script>
+<script src="dist/swiper-4.4.1/dist/js/swiper.js"></script>
+<script src="js/index.js"></script>
+
+<script>
+
+</script>
+</html>

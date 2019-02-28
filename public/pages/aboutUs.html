@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello 瘦瘦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="./../css/aboutUs.css">
+<link rel="stylesheet" href="./../dist/bootstrap-3.3.7-dist/css/bootstrap.css">
+<body>
+<!--导航部分-->
+<div id="top">
+    <!--导航内容-->
+    <div  id="nav">
+        <div id="div1">
+            <h2>花漾旅拍</h2>
+            <p>HUAYANG</p>
+        </div>
+        <ul>
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="./wedding.html">婚纱照</a></li>
+            <li id="l1">私人定制▼</li>
+            <li><a href="./lpkp.html">旅拍客片</a></li>
+            <li><a href="./video.html">微电影</a></li>
+            <li><a href="javascript:;" class="a">会员中心</a></li>
+            <li><a href="./comment.html">客户评价</a></li>
+            <li><a href="./aboutUs.html">关于我们</a></li>
+            <li id="l2">联系我们</li>
+        </ul>
+        <p id="landing">登陆/</p>
+        <p id="registered">注册</p>
+
+        <img src="./../image/index_image/ball2.png" alt="" id="ball">
+        <p id="exit">退出</p>
+    </div>
+
+    <div id="down">
+        <ul>
+            <li><a href="./loves.html">情侣</a></li>
+            <li><a href="./family.html">家庭照</a></li>
+            <li><a href="./friend.html">好友</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--登陆框-->
+<div class="ccc1">
+    <div id="login">
+        <p class="close1">x</p>
+        <p id="title1">手机快捷登陆</p>
+        <p id="zs1">别担心，您的手机号不会泄露</p>
+        <input type="text" id="login-phone" placeholder="请输入手机号"><br>
+        <input type="text" id="login-code" placeholder="请输入验证码">
+        <p id="login-getuser">账号密码登陆</p>
+        <span class="tipx"></span>
+
+        <div onclick="sendwcode2()" id="login-getCode">
+            <input type="button" class="btn" id="loginBtn"
+                   onclick="setTime(this)" value="获取验证码" />
+        </div>
+        <div id="login-btn">登陆</div>
+        <p id="login-protocol">登陆即代表同意《花漾隐私政策》及《花漾用户服务协议》</p>
+    </div>
+</div>
+
+<!--账号密码登陆-->
+<div class="ccc3">
+    <div id="name">
+        <p class="close3">x</p>
+        <p id="title3">账号密码登陆</p>
+        <p id="gojointext">没有账号</p>
+        <p id="gojoin">立即注册</p>
+        <input type="text" id="name-user" placeholder="请输入账号">
+        <input type="password" id="name-password" placeholder="请输入密码">
+        <span class="tipx2"></span>
+        <div id="name-btn">登陆</div>
+        <p id="get-login">手机号快捷登陆</p>
+        <p id="name-p1">登陆即代表同意《花漾隐私政策》及《花漾用户服务协议》</p>
+    </div>
+
+</div>
+<!--注册框-->
+<div class="ccc2">
+    <div id="join">
+        <p class="close2">x</p>
+        <p id="title2">手机号码注册</p>
+        <p id="join-text">已有账号?</p>
+        <p id="goLogin">去登陆</p>
+        <input type="text" id="join-phone" placeholder="请输入手机号">
+        <span class="tipx3"></span>
+        <input type="password" id="join-password" placeholder="请输入密码（至少8位）">
+        <span class="tipx4"></span>
+        <input type="text" id="join-code" placeholder="请输入验证码">
+        <div onclick="sendwcode()" id="join-getcode">
+            <input type="button" class="btn" id="btn"
+                   onclick="setTime(this)" value="获取验证码" />
+        </div>
+        <input type="checkbox" name="" id="join-checkbox">
+        <p id="checkbox-value">我已阅读并同意《花漾隐私政策》及《花漾用户服务协议》</p>
+        <div id="join-btn">注册</div>
+    </div>
+</div>
+
+<!--内容-->
+<img src="./../image/video/banner.jpg" alt="" id="img1">
+<div id="box1">
+<div id="box2">
+    <img src="./../image/index_image/k3.jpg" alt="">
+    <div id="text">
+        <h2>花漾旅拍</h2>
+        <p>@huayang</p>
+        <div class="div1">
+            花漾旅拍，全球100大旅拍城市
+            花漾旅拍是花漾旅拍文化有限公司旗下品牌 ，是中国旅拍婚纱的开创者。公司总部设立于厦门，全球100大旅拍城市：厦门/三亚/北京/丽江/大理/青岛/大连/深圳/桂林/杭州/香格里拉/香港/澳门/普吉岛/巴厘岛/马尔代夫/日本/巴黎/普罗旺斯/希腊/布拉格/瑞士/罗马/威尼斯/伦敦/佛罗伦萨/巴塞罗那/葡萄牙/荷兰/土耳其/冰岛等。铂爵旅拍，在全世界最美的地方等你。
+        </div>
+    </div>
+    <div id="box3">
+        <div id="text2">
+            <h2>花漾旅拍</h2>
+            <p>@huayang</p>
+            <div class="div1">
+                花漾自创立以来一直坚持“只用客照说话”以及“客户=明星”的理念。官方平台每年发布数十万对客照，客照品质完全透明。自创“铂爵风”摄影风格，追求“自由、自在、自然”的摄影手法而风靡全球！近年来越来越多娱乐圈的大咖们，都相继选择铂爵旅拍为他们拍摄婚纱照。铂爵旅拍，明星的选择。
+            </div>
+        </div>
+        <img src="./../image/video/1.jpg" alt="">
+    </div>
+    <div id="box4">
+        <img src="./../image/video/2.jpg" alt="">
+        <div id="text3">
+            <h2>花漾旅拍</h2>
+            <p>@huayang</p>
+            <div class="div1">
+                铂爵旅拍率先倡导“旅游婚纱产业”战略计划，结合全球各地丰富的旅游资源，提出“度蜜月、拍婚纱”的一站式运营模式。全面采用国际知名礼服品牌/彩妆品牌，为客户提供星级酒店免费入住。铂爵旅拍高端定制旅拍的开创者。
+            </div>
+        </div>
+</div>
+</div>
+</div>
+
+
+<!--底部-->
+<div id="box7">
+    <h3>Hua  Yang PhotoGrophy</h3>
+    <p>时尚 | 自由 | 轻奢 | 随性</p>
+    <p>三亚 / 厦门 / 丽江 / 大理 / 深圳 / 北京 / 上海 / 香港 / 澳门 / 香格里拉 / 桂林 / 杭州 / 大连 / 青岛/</p>
+    <p>成都 / 南充 / 峨眉 / 江油/ 眉山 / 资阳 / 西安 / 六盘水 / 攀枝花 / 广安 / 德阳 / 绵阳 / 遂宁 / 台湾</p>
+    <div>
+        <p>全国免费咨询电话：18881206860 （在线时间9：00-22：00)</p>
+        <p>客服联系微信：fengwei0618 （在线时间9：00-22：00）</p>
+    </div>
+</div>
+<!--客服联系-->
+<div id="talk">
+    <div id="talk-div1">
+        <p>花漾旅拍</p>
+        <span class="glyphicon glyphicon-menu-down" id="talk-close1"></span>
+    </div>
+    <div id="talk-div2"></div>
+    <div id="talk-div3">
+        <textarea name="" id="msg" cols="30" rows="10"></textarea>
+        <button type="button" class="btn btn-primary" id="talk-btn">发送</button>
+    </div>
+</div>
+
+<!--缩小后的客服联系-->
+<div id="smoll-talk">
+    <div id="smoll-talk-div1">
+        <span class="glyphicon glyphicon-envelope"></span>
+    </div>
+    <p>和我们在线交谈</p>
+    <span class="glyphicon glyphicon-menu-up" id="talk-close2"></span>
+</div>
+</body>
+<script src="./../js/indexDist.js"></script>
+<script src="./../dist/swiper-4.4.1/dist/js/swiper.js"></script>
+<script src="./../dist/jquery-3.3.1.js"></script>
+<script src="./../js/index.js"></script>
+<script src="./../js/indexDist.js"></script>
+</html>

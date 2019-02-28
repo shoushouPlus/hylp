@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./../css/pay.css">
+    <link rel="stylesheet" href="./../font/font_zid63jtqoo/iconfont.css">
+</head>
+<script src="./../dist/jquery-3.3.1.js"></script>
+<body>
+<div id="box">
+
+    <div id="top">
+        <div id="topText1"> <p class="chinese">花漾旅拍</p> <p class="pinyin">HUAYANG</p> </div>
+        <div id="topText2">收银台</div>
+    </div>
+
+    <div id="center">
+        <div class="icons"><i class="iconfont">&#xe654;</i></div>
+        <div class="des">
+            <p class="p1">共计1笔订单</p>
+            <p id="p2">支付订单号：acd5975fer2489</p>
+            <p class="p3">请及时完成付款，否则订单将被自动取消</p>
+        </div>
+        <div class="sum">
+            <p>支付<span>1000.00</span>元</p>
+        </div>
+    </div>
+
+    <div id="bottom">
+          <ul>
+              <li class="active">扫码支付</li>
+              <li>支付平台</li>
+          </ul>
+        <div class="active" id="saoma">
+            <p>扫一扫下方的二维码即可付款</p>
+            <img src="./../image/hx/pay.jpg" alt="">
+        </div>
+
+        <div id="pintai">
+           <p><b>支付平台</b>跳转至平台页面支付<span>1000.00</span>元</p>
+           <input type="radio" name="payWay">
+            <img src="./../image/hx/weixin.jpg" alt="" id="weixin">
+           <input type="radio" name="payWay">
+            <img src="./../image/hx/zhifubao.jpg" alt="" id="zhifubao">
+
+            <div id="goPay">
+                去支付
+            </div>
+        </div>
+
+
+
+    </div>
+
+</div>
+
+</body>
+<script src="./../js/pay.js"></script>
+
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="./../css/friend-det.css" />
+<link rel="stylesheet" href="./../dist/bootstrap-3.3.7-dist/css/bootstrap.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+</head>
+<script  src="./../dist/jquery-3.3.1.js"></script>
+<body>
+<!--导航部分-->
+<div id="top">
+    <!--导航内容-->
+    <div  id="nav">
+        <div id="div1">
+            <h2>花漾旅拍</h2>
+            <p>HUAYANG</p>
+        </div>
+        <ul>
+            <li><a href="./../index.html">首页</a></li>
+            <li><a href="wedding.html">婚纱照</a></li>
+            <li id="l1">私人定制▼</li>
+            <li><a href="lpkp.html">旅拍客片</a></li>
+            <li><a href="video.html">微电影</a></li>
+            <li><a href="javascript:;" class="a">会员中心</a></li>
+            <li><a href="comment.html">客户评价</a></li>
+            <li><a href="aboutUs.html">关于我们</a></li>
+            <li id="l2">联系我们</li>
+        </ul>
+        <p id="landing">登陆/</p>
+        <p id="registered">注册</p>
+
+        <img src="./../image/index_image/ball2.png" alt="" id="ball">
+        <p id="exit">退出</p>
+    </div>
+
+    <div id="down">
+        <ul>
+            <li><a href="loves.html">情侣</a></li>
+            <li><a href="family.html">家庭照</a></li>
+            <li><a href="friend.html">好友</a></li>
+        </ul>
+    </div>
+</div>
+<!--登陆框-->
+<div class="ccc1">
+    <div id="login">
+        <p class="close1">x</p>
+        <p id="title1">手机快捷登陆</p>
+        <p id="zs1">别担心，您的手机号不会泄露</p>
+        <input type="text" id="login-phone" placeholder="请输入手机号"><br>
+        <input type="text" id="login-code" placeholder="请输入验证码">
+        <p id="login-getuser">账号密码登陆</p>
+        <span class="tipx"></span>
+        <div onclick="sendwcode2()" id="login-getCode">
+            <input type="button" class="btn" id="loginBtn"
+                   onclick="setTime(this)" value="获取验证码" />
+        </div>
+        <div id="login-btn">登陆</div>
+        <p id="login-protocol">登陆即代表同意《花漾隐私政策》及《花漾用户服务协议》</p>
+    </div>
+</div>
+<!--账号密码登陆-->
+<div class="ccc3">
+    <div id="name">
+        <p class="close3">x</p>
+        <p id="title3">账号密码登陆</p>
+        <p id="gojointext">没有账号</p>
+        <p id="gojoin">立即注册</p>
+        <input type="text" id="name-user" placeholder="请输入账号">
+        <input type="password" id="name-password" placeholder="请输入密码">
+        <span class="tipx2"></span>
+        <div id="name-btn">登陆</div>
+        <p id="get-login">手机号快捷登陆</p>
+        <p id="name-p1">登陆即代表同意《花漾隐私政策》及《花漾用户服务协议》</p>
+    </div>
+
+</div>
+<!--注册框-->
+<div class="ccc2">
+    <div id="join">
+        <p class="close2">x</p>
+        <p id="title2">手机号码注册</p>
+        <p id="join-text">已有账号?</p>
+        <p id="goLogin">去登陆</p>
+        <input type="text" id="join-phone" placeholder="请输入手机号">
+        <span class="tipx3"></span>
+        <input type="password" id="join-password" placeholder="请输入密码（至少8位）">
+        <span class="tipx4"></span>
+        <input type="text" id="join-code" placeholder="请输入验证码">
+        <div onclick="sendwcode()" id="join-getcode">
+            <input type="button" class="btn" id="btn"
+                   onclick="setTime(this)" value="获取验证码" />
+        </div>
+        <input type="checkbox" name="" id="join-checkbox">
+        <p id="checkbox-value">我已阅读并同意《花漾隐私政策》及《花漾用户服务协议》</p>
+        <div id="join-btn">注册</div>
+    </div>
+</div>
+<div id="f_box">
+</div>
+<div id="box25">
+    <h3>Hua  Yang PhotoGrophy</h3>
+    <p>时尚 | 自由 | 轻奢 | 随性</p>
+    <p>三亚 / 厦门 / 丽江 / 大理 / 深圳 / 北京 / 上海 / 香港 / 澳门 / 香格里拉 / 桂林 / 杭州 / 大连 / 青岛/</p>
+    <p>成都 / 南充 / 峨眉 / 江油/ 眉山 / 资阳 / 西安 / 六盘水 / 攀枝花 / 广安 / 德阳 / 绵阳 / 遂宁 / 台湾</p>
+    <div>
+        <p>全国免费咨询电话：18881206860 （在线时间9：00-22：00)</p>
+        <p>客服联系微信：fengwei0618 （在线时间9：00-22：00）</p>
+    </div>
+</div>
+</body>
+<script src="./../js/friend.det.js"></script>
+<script  src="./../js/indexDist.js"></script>
+<script>
+    window.onload=function () {
+        $.ajax({
+            url:'/ball',
+            success:function (err) {
+                if(err.error==0){
+                    $('#ball').show();
+                    $('#exit').show();
+                    $('#landing').hide();
+                    $('#registered').hide()
+                }
+            }
+        });
+        var  url=location.search;
+        var arr=url.split("=");
+        $.ajax({
+                url: '/friendDetail',
+                data:{data:arr[1]},
+                success: function (res) {
+                    $('#f_box').append(`<div></div>
+                <div id="box1">
+                    <div id="box4">
+                        <div id="box2"></div>
+                        <div id="box3">
+                            <p id="p1">热门推荐:</p>
+                            <p id="p2">${res[0].md_des1}</p>
+                            <p id="p3">${res[0].md_des2}</p>
+                            <p id="p4">${res[0].md_des3}</p>
+                        </div>
+                        <div id="box5">
+                        <div id="box6">
+                           </div>
+                        <div id="box7">
+                            <div id="box8">
+                                <p id="p5">定金：<span id="span2">￥1000</span></p>
+                                <span id="span1">建议提前15天预定</span>
+                            </div>
+                            <p id="p6">优惠信息:<span id="span3">现在购买还有价值300元精美小礼品赠送哦！手慢无</span></p>
+                            <div id="box9"><p class="p7">满意度:<span class="span4">98.8%</span></p><p class="p7">点评数:<span class="span4">20</span></p><p class="p8">关注度:<span class="span4">40</span></p></div>
+                            <div id="box10"><p >拍摄日期:</p><input type="text"></div>
+                            <div id="box11"><p >拍摄人数:</p>
+                                <div class="div9">
+                                    <div class="div10">-</div><div id="box12">1</div><div class="div11">+</div><div id="box13"><span id="p7">成人</span></div></div>
+                                <div id="box14"></div>
+                            </div>
+                        </div>
+                    </div>
+             </div>
+                </div>
+                <div id="box15"></div>
+                <div id="box16">
+                    <p id="p8">套餐详图</p>
+                    <p id="p9">套餐包含</p>
+                    <p id="p10">退款须知</p>
+                    <p id="p11">友情提示</p>
+                </div>
+               <div id="box18">
+                   <p id="p12"> &nbsp;  &nbsp; &nbsp; &nbsp;${res[0].md_description}</p>
+               </div>
+                <div>
+                    <div id="box19">
+                        <div id="box20"></div>
+                        <div id="box21"></div>
+                    </div>
+                    <div id="box22">
+                        <div id="box23"></div>
+                        <div id="box24"></div>
+                    </div>
+                </div>
+                <div class="box25"></div>
+                <div>
+             <div id="box27">
+                 <div class="box26">套餐包含</div>
+                <div class="oP">
+                    <p>[交通]本套餐不包含出发地到拍摄地的交通费用，如需代订火车票，机票，高铁票，请联系客服</p>
+                    <p>[食宿]免费提供五星级酒店或高档酒店，旅拍期间免费提供所有用餐，如客人需要自行安排食宿，概不退费</p>
+                    <p>[赠送]赠送拍摄景点所有门票，底片全送，特别赠送旅拍意外险(最高保险额5万元)</p>
+                    <p>[服务]24小时接机服务。包含5套拍摄服装，以及精美化妆，服装师，摄影师随时为你服务</p>
+                </div>
+             </div>
+                    <div class="box25"></div>
+                    <div>
+                        <div class="box26">退款须知</div>
+                        <p class="oP1">1.所有的产品，在使用有效期内未与商家预约或预约产品出行日期双方未达成一致，且在拍摄日前在出发前十五天提出退款，退定金的百分之50；在使用有效期内未与商家预约或预约产品出行日期双方未达成一致，在出发前一周的提出退款，退定金的百分之10；在使用有效期内未与商家预约或预约产品出行日期双方未达成一致，且在拍摄日前一周月未消费的不能退款；如用户已经与商家预约产品，申请退款需要承担实际损失或按照双方签署协议承担损失。<br>
+                            2、退款金额将在15个工作日内返回您的原支付账户</p>
+                    </div>
+                    <div class="box25"></div>
+                    <div>
+                        <div class="box26">友情提示</div>
+                        <p class="oP2">1、在拍摄中注意证件、钱财的保管及自身的安全，并将重要证件分开存放。<br>
+                            2、在景区拍摄时请警惕闲散游荡人员，帮忙拍合照时要时刻注意物品安全。<br>
+                            3、最好根据个人情况带上所需药品，如伤风感冒药、解暑药、止痛片、消炎片、晕车药、创可贴等。</p>
+                    </div>
+            </div>`)
+                    $('#box2').css({
+                        'background':'url('+res[0].md_img3+') ',
+                        'background-repeat':'no-repeat',
+                        'background-size':'contain',
+                        'background-size':'580px,352px',
+                        'height':'352px',
+                        'width':'580px',
+
+
+                    });
+                    $('#box20').css({
+                        'background':'url('+res[0].md_img1+') ',
+                        'background-repeat':'no-repeat',
+                        'background-size':'contain',
+                        'background-size':'580px,352px',
+                        'height':'352px',
+                        'width':'580px',
+                        'margin-right':'148px',
+
+
+                    });
+                    $('#box21').css({
+                        'background':'url('+res[0].md_img2+') ',
+                        'background-repeat':'no-repeat',
+                        'background-size':'contain',
+                        'background-size':'580px,352px',
+                        'height':'352px',
+                        'width':'580px',
+                        'margin-top': '-352px',
+                        'margin-right':'170px'
+
+
+
+
+                    });
+                    $('#box23').css({
+                        'background':'url('+res[0].md_img3+' )',
+                        'background-repeat':'no-repeat',
+                        'background-size':'contain',
+                        'background-size':'580px,352px',
+                        'height':'352px',
+                        'width':'580px',
+                        'margin-right':'148px'
+
+                    });
+                    $('#box24').css({
+                        'background':'url('+res[0].md_img4+') ',
+                        'background-repeat':'no-repeat',
+                        'background-size':'contain',
+                        'background-size':'580px,352px',
+                        'height':'352px',
+                        'width':'580px',
+                        'margin-top': '-352px',
+                        'margin-right':'170px'
+
+                    });
+                    $('#box14').append(`<a data-index="${arr[1]}" class="bookOnce" href="javascript:;">立即预定</a>`)
+
+
+                },
+                error: function(error) {
+                    console.log(error);
+                }
+            });
+    }
+</script>
+</html>

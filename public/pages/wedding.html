@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>花漾旅拍</title>
+
+    <link rel="stylesheet" href="./../css/wedding.css">
+    <script src="./../dist/jquery-3.3.1.js"></script>
+
+
+    <link rel="stylesheet" href="./../css/index.css">
+    <link rel="stylesheet" href="./../dist/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./../dist/swiper-4.4.1/dist/css/swiper.css">
+    <link rel="stylesheet" href="./../css/customMade.css">
+
+</head>
+<body>
+
+<div id="top">
+    <!--导航内容-->
+    <div  id="nav">
+        <div id="div1">
+            <h2>花漾旅拍</h2>
+            <p>HUAYANG</p>
+        </div>
+        <ul>
+            <li><a href="./../index.html">首页</a></li>
+            <li><a href="wedding.html">婚纱照</a></li>
+            <li id="l1">私人定制▼</li>
+            <li><a href="lpkp.html">旅拍客片</a></li>
+            <li><a href="video.html">微电影</a></li>
+            <li><a href="javascript:;" class="a">会员中心</a></li>
+            <li><a href="comment.html">客户评价</a></li>
+            <li><a href="aboutUs.html">关于我们</a></li>
+            <li id="l2">联系我们</li>
+        </ul>
+        <p id="landing">登陆/</p>
+        <p id="registered">注册</p>
+
+        <img src="" alt="" id="ball">
+        <p id="exit">退出</p>
+    </div>
+
+    <div id="down">
+        <ul>
+            <li><a href="loves.html">情侣</a></li>
+            <li><a href="family.html">家庭照</a></li>
+            <li><a href="friend.html">好友</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--登陆框-->
+<div class="ccc1">
+    <div id="login">
+        <p class="close1">x</p>
+        <p id="title1">手机快捷登陆</p>
+        <p id="zs1">别担心，您的手机号不会泄露</p>
+        <input type="text" id="login-phone" placeholder="请输入手机号"><br>
+        <input type="text" id="login-code" placeholder="请输入验证码">
+        <p id="login-getuser">账号密码登陆</p>
+        <span class="tipx"></span>
+        <p id="login-getCode">| 获取验证码</p>
+        <div id="login-btn">登陆</div>
+        <p id="login-protocol">登陆即代表同意《花漾隐私政策》及《花漾用户服务协议》</p>
+    </div>
+</div>
+
+<!--账号密码登陆-->
+<div class="ccc3">
+    <div id="name">
+        <p class="close3">x</p>
+        <p id="title3">账号密码登陆</p>
+        <p id="gojointext">没有账号</p>
+        <p id="gojoin">立即注册</p>
+        <input type="text" id="name-user" placeholder="请输入账号">
+        <input type="password" id="name-password" placeholder="请输入密码">
+        <span class="tipx2"></span>
+        <div id="name-btn">登陆</div>
+        <p id="get-login">手机号快捷登陆</p>
+        <p id="name-p1">登陆即代表同意《花漾隐私政策》及《花漾用户服务协议》</p>
+    </div>
+
+</div>
+
+<!--注册框-->
+<div class="ccc2">
+    <div id="join">
+        <p class="close2">x</p>
+        <p id="title2">手机号码注册</p>
+        <p id="join-text">已有账号?</p>
+        <p id="goLogin">去登陆</p>
+        <input type="text" id="join-phone" placeholder="请输入手机号">
+        <span class="tipx3"></span>
+        <input type="password" id="join-password" placeholder="请输入密码（至少8位）">
+        <span class="tipx4"></span>
+        <input type="text" id="join-code" placeholder="请输入验证码">
+        <p id="join-getcode">| 获取验证码</p>
+        <input type="checkbox" name="" id="join-checkbox">
+        <p id="checkbox-value">我已阅读并同意《花漾隐私政策》及《花漾用户服务协议》</p>
+        <div id="join-btn">注册</div>
+    </div>
+</div>
+
+<!--客服联系-->
+<div id="talk">
+    <div id="talk-div1">
+        <p>花漾旅拍</p>
+        <span class="glyphicon glyphicon-menu-down" id="talk-close1"></span>
+    </div>
+    <div id="talk-div2"></div>
+    <div id="talk-div3">
+        <textarea name="" id="msg" cols="30" rows="10"></textarea>
+        <button type="button" class="btn btn-primary" id="talk-btn">发送</button>
+    </div>
+</div>
+
+<!--缩小后的客服联系-->
+<div id="smoll-talk">
+    <div id="smoll-talk-div1">
+        <span class="glyphicon glyphicon-envelope"></span>
+    </div>
+    <p>和我们在线交谈</p>
+    <span class="glyphicon glyphicon-menu-up" id="talk-close2"></span>
+</div>
+
+
+    <!--内容部分-->
+    <div id="box">
+        <!--banner图部分-->
+        <div id="bannerImg">
+            <!--预定框-->
+            <div id="bookBox">
+                <span class="glyphicon glyphicon-remove" id="close"></span>
+                <p>花漾旅拍定制</p>
+                <div id="msg">
+                    <div class="msgRow">
+                        <span>预算金额：</span>
+                        <select name="preSum" id="preSum">
+                            <option value="">4999元~8999元</option>
+                            <option value="">9000元~12999元</option>
+                            <option value="">13000元~17999元</option>
+                            <option value="">18000元以上</option>
+                        </select>
+                    </div>
+                    <div class="msgRow">
+                        <span>拍摄地：</span>
+                        <select name="selPlace" id="selPlace">
+                            <option disabled selected>---请选择---</option>
+                            <option value="">马尔代夫</option>
+                            <option value="">巴厘岛</option>
+                            <option value="">哈尔滨</option>
+                            <option value="">三亚</option>
+                            <option value="">四川</option>
+                            <option value="">云南</option>
+                            <option value="">北京</option>
+                            <option value="">其他</option>
+                        </select>
+                    </div>
+                    <div class="msgRow">
+                        <span id="msg_span"></span><span>联系电话：</span>
+                        <input type="text" placeholder="请输入11位手机号码">
+                    </div>
+
+                    <div id="customBtn">
+                        <a href="">提&nbsp;交</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--活动报价的线和文字部分-->
+        <div id="lineTextBox">
+            <div class="line"></div>
+            <div id="offersText">活动报价</div>
+            <div class="line"></div>
+        </div>
+
+
+            <!--地方部分-->
+            <div id="placesBox">
+                <ul>
+                    <li class="active" id="hot">热门推荐</li>
+                    <!--<li>马尔代夫</li>-->
+                    <!--<li>巴厘岛</li>-->
+                    <!--<li>四川</li>-->
+                    <!--<li>云南</li>-->
+                    <!--<li>北京</li>-->
+                    <!--<li>其他站点</li>-->
+                </ul>
+            </div>
+
+        <div id="tabBox">
+            <!--热门推荐套餐部分-->
+            <div id="mealBox" class="active">
+                <!--第1个套餐-->
+                <!--<div class="mealTemplateLeft">-->
+                    <!--<div class="mealText">-->
+                        <!--<h3 class="bigTitle">12月巨献</h3>-->
+                        <!--<p class="title">青海湖旅拍套系</p>-->
+                        <!--<p class="niceWords">你在哪儿，哪儿就被我守望着</p>-->
+                        <!--<p class="price"> <span class="newPrice">￥5200</span>-->
+                            <!--<del class="oldPrice">￥6999</del> </p>-->
+                        <!--<p class="radioText">-->
+                            <!--<input type="radio" checked><span>底片全送</span>-->
+                            <!--<input type="radio" checked><span>赠送酒店及门票</span>-->
+                            <!--<input type="radio" checked><span>24小时接机服务</span>-->
+                        <!--</p>-->
+                        <!--<a href="book.html"><div class="bookOnce">立即预定</div></a>-->
+                        <!--<a href="wedding.det.html"><div class="knowMore">了解更多</div></a>-->
+                    <!--</div>-->
+                    <!--<div class="mealImage">-->
+                        <!--<img src="./../image/wedding/2.png" alt="">-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--第2个套餐-->
+                <!--<div class="mealTemplateRight">-->
+                    <!--<div class="mealImage">-->
+                        <!--<img src="./../image/wedding/203lanyuegu.jpg" alt="">-->
+                    <!--</div>-->
+                    <!--<div class="mealText">-->
+                        <!--<h3 class="bigTitle">限时特惠</h3>-->
+                        <!--<p class="title">蓝月谷旅拍套系</p>-->
+                        <!--<p class="niceWords">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当你意识到你想和某人共度余生，你会希望余生尽早开始</p>-->
+                        <!--<p class="price"> <span class="newPrice">￥7999</span>-->
+                            <!--<del class="oldPrice">￥8666</del> </p>-->
+                        <!--<p class="radioText">-->
+                            <!--<input type="radio" checked><span>底片全送</span>-->
+                            <!--<input type="radio" checked><span>赠送酒店及门票</span>-->
+                            <!--<input type="radio" checked><span>24小时接机服务</span>-->
+                        <!--</p>-->
+                        <!--<div class="bookOnce">立即预定</div>-->
+                        <!--<div class="knowMore">了解更多</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--第3个套餐-->
+                <!--<div class="mealTemplateLeft">-->
+                    <!--<div class="mealText">-->
+                        <!--<h3 class="bigTitle">火力全开</h3>-->
+                        <!--<p class="title">香格里拉藏族风套系</p>-->
+                        <!--<p class="niceWords">就是信仰你，毫无道理</p>-->
+                        <!--<p class="price"> <span class="newPrice">6888</span>-->
+                            <!--<del class="oldPrice">￥7688</del> </p>-->
+                        <!--<p class="radioText">-->
+                            <!--<input type="radio" checked><span>底片全送</span>-->
+                            <!--<input type="radio" checked><span>赠送酒店及门票</span>-->
+                            <!--<input type="radio" checked><span>24小时接机服务</span>-->
+                        <!--</p>-->
+                        <!--<div class="bookOnce">立即预定</div>-->
+                        <!--<div class="knowMore">了解更多</div>-->
+                    <!--</div>-->
+                    <!--<div class="mealImage">-->
+                        <!--<img src="./../image/wedding/192xiang.jpg" alt="">-->
+                    <!--</div>-->
+
+                <!--</div>-->
+            </div>
+
+            <!--马尔代夫套餐-->
+            <div id="mealBox2">
+                <!--第1个套餐-->
+                <!--<div class="mealTemplateLeft">-->
+                    <!--<div class="mealText">-->
+                        <!--<h3 class="bigTitle">良心热推</h3>-->
+                        <!--<p class="title">马尔代夫神仙珊瑚岛</p>-->
+                        <!--<p class="niceWords">这世界很美，因为喜欢～你呀～！</p>-->
+                        <!--<p class="price"> <span class="newPrice">￥11888</span>-->
+                            <!--<del class="oldPrice">￥12666</del> </p>-->
+                        <!--<p class="radioText">-->
+                            <!--<input type="radio" checked><span>底片全送</span>-->
+                            <!--<input type="radio" checked><span>赠送酒店及门票</span>-->
+                            <!--<input type="radio" checked><span>24小时接机服务</span>-->
+                        <!--</p>-->
+                        <!--<div class="bookOnce">立即预定</div>-->
+                        <!--<div class="knowMore">了解更多</div>-->
+                    <!--</div>-->
+                    <!--<div class="mealImage">-->
+                        <!--<img src="./../image/wedding/maerdaifu2.jpg" alt="">-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--第2个套餐-->
+                <!--<div class="mealTemplateRight">-->
+                    <!--<div class="mealImage">-->
+                        <!--<img src="./../image/wedding/kdst1.jpg" alt="">-->
+                    <!--</div>-->
+                    <!--<div class="mealText">-->
+                        <!--<h3 class="bigTitle">全新景点</h3>-->
+                        <!--<p class="title">马尔代夫库达沙滩旅拍套系</p>-->
+                        <!--<p class="niceWords">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;喜欢你笑起来毫无保留的样子～</p>-->
+                        <!--<p class="price"> <span class="newPrice">￥13999</span>-->
+                            <!--<del class="oldPrice">￥14666</del> </p>-->
+                        <!--<p class="radioText">-->
+                            <!--<input type="radio" checked><span>底片全送</span>-->
+                            <!--<input type="radio" checked><span>赠送酒店及门票</span>-->
+                            <!--<input type="radio" checked><span>24小时接机服务</span>-->
+                        <!--</p>-->
+                        <!--<div class="bookOnce">立即预定</div>-->
+                        <!--<div class="knowMore">了解更多</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--第3个套餐-->
+                <!--<div class="mealTemplateLeft">-->
+                    <!--<div class="mealText">-->
+                        <!--<h3 class="bigTitle">旅拍圣地</h3>-->
+                        <!--<p class="title">马尔代夫玛娜法鲁岛套系</p>-->
+                        <!--<p class="niceWords">你就像上天为我量身定制的——最好的爱情</p>-->
+                        <!--<p class="price"> <span class="newPrice">￥16888</span>-->
+                            <!--<del class="oldPrice">￥17666</del> </p>-->
+                        <!--<p class="radioText">-->
+                            <!--<input type="radio" checked><span>底片全送</span>-->
+                            <!--<input type="radio" checked><span>赠送酒店及门票</span>-->
+                            <!--<input type="radio" checked><span>24小时接机服务</span>-->
+                        <!--</p>-->
+                        <!--<a href=""><div class="bookOnce">立即预定</div></a>-->
+                        <!--<a href=""><div class="knowMore">了解更多</div></a>-->
+                    <!--</div>-->
+                    <!--<div class="mealImage">-->
+                        <!--<img src="./../image/wedding/malafaludao1.jpg" alt="">-->
+                    <!--</div>-->
+            <!--</div>-->
+            </div>
+
+            <!--巴厘岛套餐-->
+            <!--<div id="mealBox3">-->
+
+            <!--</div>-->
+        </div>
+
+
+    </div>
+
+    <!--底部-->
+    <div id="box7">
+        <h3>Hua  Yang PhotoGrophy</h3>
+        <p>时尚 | 自由 | 轻奢 | 随性</p>
+        <p>三亚 / 厦门 / 丽江 / 大理 / 深圳 / 北京 / 上海 / 香港 / 澳门 / 香格里拉 / 桂林 / 杭州 / 大连 / 青岛/</p>
+        <p>成都 / 南充 / 峨眉 / 江油/ 眉山 / 资阳 / 西安 / 六盘水 / 攀枝花 / 广安 / 德阳 / 绵阳 / 遂宁 / 台湾</p>
+        <div>
+            <p>全国免费咨询电话：18881206860 （在线时间9：00-22：00)</p>
+            <p>客服联系微信：fengwei0618 （在线时间9：00-22：00）</p>
+        </div>
+    </div>
+
+</body>
+<script src="./../js/indexDist.js"></script>
+<script src="./../js/wedding.js"></script>
+</html>

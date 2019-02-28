@@ -1,0 +1,373 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body{
+  margin: 0 auto;
+}
+#ul-1{
+  margin-left: 400px;
+  margin-top: -20px;
+
+}
+#ul-1 li{
+  float: left;
+  margin-left: 120px;
+}
+.img1{
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  margin-left:-10px;
+}
+
+h3{
+  position: absolute;
+  top: 260px;
+  left: 110px;
+}
+header{
+  width: 100%;
+  height: 100px;
+}
+#sP-2{
+  margin-top:130px;
+  margin-left: 110px;
+  font-size: 16px;
+  position: absolute;
+}
+#ul-2 li{
+  float: left;
+  margin-left:120px;
+  font-size: 16px;
+}
+#ul-2{
+  margin-top:80px;
+  margin-left:400px;
+  display: none;
+}
+
+#ul-3 li{
+  width: 60px;
+  height: 22px;
+  border: solid #EEEEEE;
+}
+h4{
+  width: 60px;
+  height: 22px;
+  border: solid palevioletred;
+}
+
+#box{
+  width: 1366px;
+  height: 1000px;
+  border: 1px solid #faf8f5;
+  background:#faf8f5;
+}
+#h-box{
+  width: 150px;
+  height: 150px;
+  margin-top: -10px;
+}
+.p1{
+  margin-top:165px;
+  margin-left: 110px;
+  font-size: 16px;
+  position: absolute;
+}
+.p2{
+  margin-top:200px;
+  margin-left: 110px;
+  font-size: 16px;
+  position: absolute;
+}
+.p3{
+  margin-top:320px;
+  margin-left: 110px;
+  font-size: 16px;
+  position: absolute;
+}
+.p4{
+  font-size: 20px;
+  margin-left:10px;
+  margin-top:10px;
+  position: absolute;
+}
+.p5{
+  font-size: 16px;
+  margin-left:10px;
+  margin-top:110px;
+  position: absolute;
+}
+.p6{
+  font-size: 16px;
+  margin-left:10px;
+  margin-top:160px;
+  position: absolute;
+
+}
+.p7{
+  font-size: 16px;
+  margin-left:10px;
+  margin-top:230px;
+  position: absolute;
+
+}
+.h-3{
+  margin-top: 210px;
+  margin-left:-10px;
+}
+.h-4{
+  margin-top: 320px;
+  margin-left:-10px;
+}
+
+#s3{
+  margin-left:100px;
+  margin-top:11px;
+  position: absolute;
+}
+.nm{
+  font-size: 16px;
+  margin-left:10px;
+  margin-top: 70px;
+  position: absolute;
+}
+#ip1{
+  margin-left:100px;
+  margin-top: 70px;
+  position: absolute;
+}
+#sl1{
+  width: 178px;
+  height: 23px;
+  position: absolute;
+  margin-left:100px;
+  margin-top: 112px;
+}
+#sl2{
+  width: 100px;
+  height: 23px;
+  position: absolute;
+  margin-left:100px;
+  margin-top: 160px;
+}
+#sl3{
+  width: 100px;
+  height: 23px;
+  position: absolute;
+  margin-left:230px;
+  margin-top: 160px;
+}
+#a1{
+  width:300px;
+  height:180px;
+  position: absolute;
+  margin-left:100px;
+  margin-top: 230px;
+}
+/*信息框*/
+#M{
+  margin-left:400px;
+  width:800px;
+  height: 600px;
+  background:white;
+  position:absolute;
+  //状态
+  .state{
+    //border:1px solid #ccc;
+    padding-left: 120px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    //display:none;
+    span{
+      //&:hover{
+      //  color: red;
+      //}
+      cursor: pointer;
+      color: #263a3a;
+      margin-right: 40px;
+    }
+    .waitForConsumeBtn{
+      color: red;
+    }
+  }
+  //待消费套餐信息
+  .mealInfo{
+    .parent{
+      margin-bottom: 10px;
+      img{
+        width: 350px;
+        height: 220px;
+        float: left;
+      }
+      .mealInfoWord{
+        width: 450px;
+        height: 220px;
+        float: right;
+        border-top:1px solid #ccc;
+        p{
+          margin-left: 50px;
+          margin-top: 10px;
+
+        }
+        input{
+          background: none;
+          border-radius: 5px;
+          width: 100px;
+          height: 40px;
+          margin-left: 300px;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+  //待评价套餐信息
+  .waitForComment{
+      display: none;
+    .parent{margin-bottom: 10px;
+      img {
+        width: 350px;
+        height: 220px;
+        float: left;
+      }
+      .waitForComment-mealInfoWord {
+        width: 450px;
+        height: 220px;
+        float: right;
+        border-top: 1px solid #ccc;
+        p {
+          margin-left: 50px;
+          margin-top: 10px;
+        }
+        input {
+          background: none;
+          border-radius: 5px;
+          width: 100px;
+          height: 40px;
+          margin-left: 300px;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+  //添加评价
+  .addComment{
+    width:800px;
+    height: 600px;
+    display: none;
+    .comment-head{
+      width: 800px;
+      height: 40px;
+      background: #ccc;
+      .comment{
+        width: 60px;
+        height: 40px;
+        float: left;
+        margin-left: 380px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 20px;
+        //color: white;
+        border: 1px solid #ccc;
+      }
+      .return{
+        color: #1b6d85;
+        width: 60px;
+        border-radius: 5px;
+        float: right;
+        margin-right: 10px;
+        margin-top: 5px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+    }
+    .commentDescription{
+      height: 120px;
+      .wordDescription{
+        width: 800px;
+        height: 120px;
+        border: none;
+        margin-left: 4px;
+        line-height: 24px;
+        font-family: 宋体;
+        font-size: 16px;
+        border: solid 1px #ccc;
+        //text-indent: 2em;
+        margin-top: -10px;
+        margin-left: -1px;
+      }
+      .addPicBtn{
+        width: 118px;
+        height: 120px;
+        float: right;
+        border:1px solid black;
+
+      }
+    }
+    .addImgBox{
+      height: 80px;
+      .addImgBtn{
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+        margin-left: 720px;
+      }
+      div{
+        width: 80px;
+        height: 80px;
+        border: 1px solid #ccc;
+        border-top: none;
+        float: right;
+        margin-top: -80px;
+        font-size: 60px;
+        color: #ccc;
+        line-height: 60px;
+        text-align: center;
+        span{
+          font-size: 12px;
+          display: block;
+          line-height: 14px;
+        }
+      }
+    }
+    .canvas{
+      width: 800px;
+      height: 300px;
+      img{
+        width: 240px;
+        height: 180px;
+        margin-top: 60px;
+        margin-left: 18px;
+        border-radius: 0;
+      }
+    }
+    .submit{
+      margin-top: 10px;
+      float: right;
+      width: 60px;
+      height: 30px;
+      border-radius: 5px;
+      background: #ccc;
+      margin-right: 10px;
+    }
+  }
+}
+#sub{
+  width: 100px;
+  height: 30px;
+  background:#FD7284;
+  border: none;
+  margin-left: 190px;
+  margin-top: 430px;
+  z-index: 999;
+  display:none;
+  position: absolute;
+}

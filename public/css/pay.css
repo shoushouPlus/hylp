@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  background: #DAF3EF;
+}
+#box {
+  width: 1200px;
+  height: 800px;
+  margin: 40px auto;
+}
+#top {
+  width: 1100px;
+  height: 90px;
+}
+#top #topText1 {
+  float: left;
+  width: 140px;
+  height: 88px;
+  font-size: 26px;
+  text-align: center;
+  color: #66cc33;
+  border-right: 4px solid #6c3;
+}
+#top #topText1 .chinese {
+  line-height: 56px;
+}
+#top #topText1 .pinyin {
+  font-size: 16px;
+}
+#top #topText2 {
+  float: left;
+  width: 300px;
+  height: 120px;
+  font-size: 26px;
+  line-height: 56px;
+  color: #66cc33;
+  margin-left: 20px;
+}
+#center {
+  width: 1200px;
+  height: 100px;
+  background: #eaf8ff;
+  margin: 12px auto;
+  position: absolute;
+}
+#center .icons {
+  width: 86px;
+  height: 80px;
+  float: left;
+  margin-right: 12px;
+  margin-top: 10px;
+  margin-left: 32px;
+}
+#center .icons .iconfont {
+  font-size: 74px;
+  color: #00bc00;
+}
+#center .des {
+  width: 400px;
+  height: 100px;
+  float: left;
+  margin-right: 200px;
+}
+#center .des .p1 {
+  font-size: 18px;
+  line-height: 38px;
+  margin-top: 3px;
+}
+#center .des .p2 {
+  font-size: 15px;
+  line-height: 30px;
+}
+#center .des .p3 {
+  font-size: 15px;
+}
+#center .sum {
+  width: 360px;
+  height: 100px;
+  float: left;
+}
+#center .sum p {
+  margin-top: 40px;
+}
+#center .sum p span {
+  font-size: 22px;
+  color: red;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+#bottom {
+  width: 1200px;
+  height: 400px;
+  background: #fefefe;
+  position: absolute;
+  margin-top: 128px;
+  border: 1px solid slategray;
+}
+#bottom ul {
+  width: 520px;
+  height: 45px;
+  margin-top: 18px;
+  margin-left: 66px;
+}
+#bottom ul li {
+  width: 258px;
+  height: 45px;
+  float: left;
+  background: #fff;
+  border: 1px solid #000000;
+  text-align: center;
+  line-height: 46px;
+  cursor: pointer;
+}
+#saoma {
+  display: none;
+  width: 1000px;
+  height: 320px;
+}
+#saoma p {
+  width: 220px;
+  height: 40px;
+  margin-top: 50px;
+  margin-left: 400px;
+}
+#saoma img {
+  width: 184px;
+  height: 184px;
+  margin-left: 415px;
+  margin-top: 10px;
+}
+#pintai {
+  display: none;
+  width: 1000px;
+  height: 320px;
+}
+#pintai p {
+  width: 400px;
+  height: 40px;
+  margin-top: 55px;
+  margin-left: 400px;
+}
+#pintai p b {
+  font-weight: 200;
+  margin-right: 18px;
+  font-size: 17px;
+}
+#pintai p span {
+  color: red;
+  font-size: 24px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+#pintai input {
+  margin-left: 240px;
+}
+#pintai #weixin {
+  width: 180px;
+  height: 60px;
+  margin-left: 10px;
+  margin-top: 50px;
+}
+#pintai #zhifubao {
+  width: 176px;
+  height: 48px;
+  margin-left: 10px;
+  margin-top: 50px;
+}
+#pintai #goPay {
+  width: 160px;
+  height: 48px;
+  border-radius: 4%;
+  background: #f93;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 48px;
+  text-align: center;
+  margin-top: 48px;
+  margin-left: 520px;
+  cursor: pointer;
+}
+#bottom div.active {
+  display: block;
+}
+/*# sourceMappingURL=pay.css.map */

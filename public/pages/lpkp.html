@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旅拍客片</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    </style>
+    <link rel="stylesheet" href="./../dist/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/lpkp.css" />
+    <link rel="stylesheet" href="./../css/customMade1.css">
+    <script src="../dist/jquery-3.3.1.js"></script>
+    <script src="../js/indexDist.js"></script>
+    <link rel="stylesheet" href="./../dist/swiper-4.4.1/dist/css/swiper.css">
+
+
+</head>
+<body>
+
+<!--导航部分-->
+<div id="top">
+    <!--导航内容-->
+    <div  id="nav">
+        <div id="div1">
+            <h2>花漾旅拍</h2>
+            <p>HUAYANG</p>
+        </div>
+        <ul>
+            <li><a href="./../index.html">首页</a></li>
+            <li><a href="./../pages/wedding.html">婚纱照</a></li>
+            <li id="l1">私人定制▼</li>
+            <li><a href="./../pages/lpkp.html">旅拍客片</a></li>
+            <li><a href="./../pages/video.html">微电影</a></li>
+            <li><a href="./../pages/personal.html" class="a">会员中心</a></li>
+            <li><a href="./../pages/comment.html">客户评价</a></li>
+            <li><a href="./../pages/aboutUs.html">关于我们</a></li>
+            <li id="l2">联系我们</li>
+        </ul>
+        <p id="landing">登陆/</p>
+        <p id="registered">注册</p>
+
+        <img src="./../image/index_image/ball2.png" alt="" id="ball">
+        <p id="exit">退出</p>
+    </div>
+
+    <div id="down">
+        <ul>
+            <li><a href="./../pages/loves.html">情侣</a></li>
+            <li><a href="./../pages/family.html">家庭照</a></li>
+            <li><a href="./../pages/friend.html">好友</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--登陆框-->
+<div class="ccc1">
+    <div id="login">
+        <p class="close1">x</p>
+        <p id="title1">手机快捷登陆</p>
+        <p id="zs1">别担心，您的手机号不会泄露</p>
+        <input type="text" id="login-phone" placeholder="请输入手机号"><br>
+        <input type="text" id="login-code" placeholder="请输入验证码">
+        <p id="login-getuser">账号密码登陆</p>
+        <span class="tipx"></span>
+        <div onclick="sendwcode2()" id="login-getCode">
+            <input type="button" class="btn" id="loginBtn"
+                   onclick="setTime(this)" value="获取验证码" />
+        </div>
+        <div id="login-btn">登陆</div>
+        <p id="login-protocol">登陆即代表同意《花漾隐私政策》及《花漾用户服务协议》</p>
+    </div>
+</div>
+
+<!--账号密码登陆-->
+<div class="ccc3">
+    <div id="name">
+        <p class="close3">x</p>
+        <p id="title3">账号密码登陆</p>
+        <p id="gojointext">没有账号</p>
+        <p id="gojoin">立即注册</p>
+        <input type="text" id="name-user" placeholder="请输入账号">
+        <input type="password" id="name-password" placeholder="请输入密码">
+        <span class="tipx2"></span>
+        <div id="name-btn">登陆</div>
+        <p id="get-login">手机号快捷登陆</p>
+        <p id="name-p1">登陆即代表同意《花漾隐私政策》及《花漾用户服务协议》</p>
+    </div>
+
+</div>
+<!--注册框-->
+<div class="ccc2">
+    <div id="join">
+        <p class="close2">x</p>
+        <p id="title2">手机号码注册</p>
+        <p id="join-text">已有账号?</p>
+        <p id="goLogin">去登陆</p>
+        <input type="text" id="join-phone" placeholder="请输入手机号">
+        <span class="tipx3"></span>
+        <input type="password" id="join-password" placeholder="请输入密码（至少8位）">
+        <span class="tipx4"></span>
+        <input type="text" id="join-code" placeholder="请输入验证码">
+        <div onclick="sendwcode()" id="join-getcode">
+            <input type="button" class="btn" id="btn"
+                   onclick="setTime(this)" value="获取验证码" />
+        </div>
+        <input type="checkbox" name="" id="join-checkbox">
+        <p id="checkbox-value">我已阅读并同意《花漾隐私政策》及《花漾用户服务协议》</p>
+        <div id="join-btn">注册</div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--banner图-->
+<div id="bimg" >
+    <img src="../image/lpkp/1.png" class="img1">
+</div>
+<!--内容框-->
+<div id="box">
+<p id="P">最新客片</p>
+    <hr class="hr1">
+    <hr class="hr2">
+    <b><p class="p1">HUA YANG PHOTOS</p></b>
+    <p class="p2">ONLY TRAVEL WEDDING PHOTOGRAPHYTIMEONLY TRAVEL WEDDING PHOTOGRAPHYTIMEONLY TRAVEL WEDDING PHOTOGRAPHY</p>
+    <!--按钮组-->
+    <div id="typebox">
+        <ul id="ul1">
+            <li id="btn1">婚纱照</li>
+            <li id="btn2">家庭照</li>
+            <li id="btn3">情侣照</li>
+            <li id="btn4">朋友照</li>
+        </ul>
+
+    </div>
+
+<div id="i-box">
+    <!--婚纱照-->
+    <div id="ib" class="active" >
+
+    <!--<div class="div1">-->
+        <!--<img src="../image/lpkp/0.png" class="imgn">-->
+        <!--遮罩-->
+        <div class="dask">
+            <p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>
+            <p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>
+        </div>
+        <!--<a href="lpkp2.html" style="text-decoration: none;text-decoration: black" ><p class="ip1" >游艇主题(三亚)</p></a>-->
+        <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+    <!--</div>-->
+    <!--<div class="div2">-->
+       <!--<img src="../image/lpkp/1.png" class="imgn">-->
+        <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+        <!--<div class="dask">-->
+            <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+            <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+        <!--</div>-->
+        <!--<p class="ip1">游艇主题(三亚)</p>-->
+        <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+    <!--</div>-->
+    <!--<div class="div3">-->
+        <!--<img src="../image/lpkp/2.png" class="imgn">-->
+        <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+        <!--<div class="dask">-->
+            <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+            <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+        <!--</div>-->
+        <!--<p class="ip1">游艇主题(三亚)</p>-->
+        <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+    <!--</div>-->
+    <!--<div class="div4">-->
+        <!--<img src="../image/lpkp/3.png" class="imgn">-->
+        <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+        <!--<div class="dask">-->
+            <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+            <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+        <!--</div>-->
+        <!--<p class="ip1">游艇主题(三亚)</p>-->
+        <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+    <!--</div>-->
+
+
+        <!--<div class="div1">-->
+            <!--<img src="../image/lpkp/4.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">游艇主题(三亚)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+        <!--<div class="div2">-->
+            <!--<img src="../image/lpkp/20.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">游艇主题(三亚)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+        <!--<div class="div3">-->
+            <!--<img src="../image/lpkp/5.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">游艇主题(三亚)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+        <!--<div class="div4">-->
+            <!--<img src="../image/lpkp/6.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">游艇主题(三亚)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+    <!--家庭照-->
+    <!--<div id="i-box2">-->
+        <!--<div class="div1">-->
+            <!--<img src="../image/lpkp/family/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">亲子主题(厦门)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+        <!--<div class="div2">-->
+            <!--<img src="../image/lpkp/family/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">亲子主题(厦门)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+        <!--<div class="div3">-->
+            <!--<img src="../image/lpkp/family/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">亲子主题(厦门)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+        <!--<div class="div4">-->
+            <!--<img src="../image/lpkp/family/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">亲子主题(厦门)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+
+        <!--<div class="div1">-->
+            <!--<img src="../image/lpkp/family/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">亲子主题(厦门)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+        <!--<div class="div2">-->
+            <!--<img src="../image/lpkp/family/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">亲子主题(厦门)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+        <!--<div class="div3">-->
+            <!--<img src="../image/lpkp/family/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">亲子主题(厦门)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+        <!--<div class="div4">-->
+            <!--<img src="../image/lpkp/family/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">亲子主题(厦门)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+    <!--&lt;!&ndash;情侣照&ndash;&gt;-->
+    <!--<div id="i-box3">-->
+        <!--<div class="div1">-->
+            <!--<img src="../image/lpkp/LOVE/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">情侣主题(大理)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+        <!--<div class="div2">-->
+            <!--<img src="../image/lpkp/LOVE/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">情侣主题(大理)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+        <!--<div class="div3">-->
+            <!--<img src="../image/lpkp/LOVE/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">情侣主题(大理)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+        <!--<div class="div4">-->
+            <!--<img src="../image/lpkp/LOVE/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">情侣主题(大理)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+
+        <!--<div class="div1">-->
+            <!--<img src="../image/lpkp/LOVE/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">情侣主题(大理)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+        <!--<div class="div2">-->
+            <!--<img src="../image/lpkp/LOVE/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">情侣主题(大理)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+        <!--<div class="div3">-->
+            <!--<img src="../image/lpkp/LOVE/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">情侣主题(大理)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+        <!--<div class="div4">-->
+            <!--<img src="../image/lpkp/LOVE/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">情侣主题(大理)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+
+
+    <!--&lt;!&ndash;朋友照&ndash;&gt;-->
+    <!--<div id="i-box4">-->
+        <!--<div class="div1">-->
+            <!--<img src="../image/lpkp/friend/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">海洋主题(巴厘岛)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+        <!--<div class="div2">-->
+            <!--<img src="../image/lpkp/friend/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">海洋主题(巴厘岛)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+        <!--<div class="div3">-->
+            <!--<img src="../image/lpkp/friend/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">海洋主题(巴厘岛)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+        <!--<div class="div4">-->
+            <!--<img src="../image/lpkp/friend/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">海洋主题(巴厘岛)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+
+        <!--<div class="div1">-->
+            <!--<img src="../image/lpkp/friend/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">海洋主题(巴厘岛)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+        <!--<div class="div2">-->
+            <!--<img src="../image/lpkp/friend/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">海洋主题(巴厘岛)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+        <!--<div class="div3">-->
+            <!--<img src="../image/lpkp/friend/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">海洋主题(巴厘岛)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        <!--</div>-->
+        <!--<div class="div4">-->
+            <!--<img src="../image/lpkp/friend/0.png" class="imgn">-->
+            <!--&lt;!&ndash;遮罩&ndash;&gt;-->
+            <!--<div class="dask">-->
+                <!--<p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br>-->
+                <!--<p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p>-->
+            <!--</div>-->
+            <!--<p class="ip1">海洋主题(巴厘岛)</p>-->
+            <!--<p class="ip2">RECOMMEND SAMPLERECOMMEND</p>-->
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    <!--分页-->
+    <div id="f-box">
+        <button id="pre">上一页</button>
+        <div class="btn-f">1</div>
+        <div class="btn-f">2</div>
+        <div class="btn-f">3</div>
+        <button id="nxt">下一页</button>
+    </div>
+
+</div>
+<!--预约-->
+<div id="bookBox">
+    <p>花漾旅拍定制</p>
+    <div id="msg">
+        <div class="msgRow">
+            <span>预算金额：</span>
+            <select name="preSum" id="preSum">
+                <option value="">4999元~8999元</option>
+                <option value="">9000元~12999元</option>
+                <option value="">13000元~17999元</option>
+                <option value="">18000元以上</option>
+            </select>
+        </div>
+        <div class="msgRow">
+            <span>拍摄地：</span>
+            <select name="selPlace" id="selPlace">
+                <option disabled selected>---请选择---</option>
+                <option value="">马尔代夫</option>
+                <option value="">巴厘岛</option>
+                <option value="">哈尔滨</option>
+                <option value="">三亚</option>
+                <option value="">四川</option>
+                <option value="">云南</option>
+                <option value="">北京</option>
+                <option value="">其他</option>
+            </select>
+        </div>
+        <div class="msgRow">
+            <span>联系电话：</span>
+            <input type="text" >
+        </div>
+
+        <div id="customBtn">
+            <a href="">提&nbsp;交</a>
+        </div>
+    </div>
+</div>
+
+<div id="box7">
+    <h3>Hua  Yang PhotoGrophy</h3>
+    <p class="b-p1">时尚 | 自由 | 轻奢 | 随性</p>
+    <p class="b-p1">三亚 / 厦门 / 丽江 / 大理 / 深圳 / 北京 / 上海 / 香港 / 澳门 / 香格里拉 / 桂林 / 杭州 / 大连 / 青岛/</p>
+    <p class="b-p1">成都 / 南充 / 峨眉 / 江油/ 眉山 / 资阳 / 西安 / 六盘水 / 攀枝花 / 广安 / 德阳 / 绵阳 / 遂宁 / 台湾</p>
+    <div>
+    </div>
+        <p class="b-p1">全国免费咨询电话：18881206860 （在线时间9：00-22：00)</p>
+        <p class="b-p1">客服联系微信：fengwei0618 （在线时间9：00-22：00）</p>
+    </div>
+
+<!--客服联系-->
+<div id="talk">
+    <div id="talk-div1">
+        <p>花漾旅拍</p>
+        <span class="glyphicon glyphicon-menu-down" id="talk-close1"></span>
+    </div>
+    <div id="talk-div2"></div>
+    <div id="talk-div3">
+        <textarea name="" id="msg1" cols="30" rows="10"></textarea>
+        <button type="button" class="btn btn-primary" id="talk-btn">发送</button>
+    </div>
+</div>
+
+<!--缩小后的客服联系-->
+<div id="smoll-talk">
+    <div id="smoll-talk-div1">
+        <span class="glyphicon glyphicon-envelope"></span>
+    </div>
+    <p>和我们在线交谈</p>
+    <span class="glyphicon glyphicon-menu-up" id="talk-close2"></span>
+</div>
+
+</body>
+<script src="./../js/indexDist.js"></script>
+<script>
+    window.onload=function(){
+        $.ajax({
+            url:'/ball',
+            success:function (err) {
+                if(err.error==0){
+                    $('#ball').show();
+                    $('#exit').show();
+                    $('#landing').hide();
+                    $('#registered').hide()
+                    $('#ball').attr('src',err.data[0].u_headPhoto)
+                }
+            }
+        });
+    };
+
+
+
+
+    var type=1;
+    var oBtn1=document.getElementById('btn1');
+    var oBtn2=document.getElementById('btn2');
+    var oBtn3=document.getElementById('btn3');
+    var oBtn4=document.getElementById('btn4');
+
+
+// 分页
+var oPre=document.getElementById('pre');
+var oNxt=document.getElementById('nxt');
+
+// 分页移入按钮
+oPre.onmousemove=function () {
+    oPre.style.background='#b8aa90';
+    oPre.style.color='white';
+};
+oNxt.onmousemove=function () {
+    oNxt.style.background='#b8aa90';
+    oNxt.style.color='white';
+};
+
+// 分页移除按钮
+oPre.onmouseleave=function () {
+    oPre.style.background='white';
+    oPre.style.color='black';
+};
+oNxt.onmouseleave=function () {
+    oNxt.style.background='white';
+    oNxt.style.color='black';
+};
+
+
+
+// 导航移入按钮
+oBtn1.onmousemove=function () {
+    oBtn1.style.background='#b8aa90';
+    oBtn1.style.color='white';
+};
+oBtn2.onmousemove=function () {
+    oBtn2.style.background='#b8aa90';
+    oBtn2.style.color='white';
+};
+oBtn3.onmousemove=function () {
+    oBtn3.style.background='#b8aa90';
+    oBtn3.style.color='white';
+};
+oBtn4.onmousemove=function () {
+    oBtn4.style.background='#b8aa90';
+    oBtn4.style.color='white';
+};
+
+
+// 导航移出按钮
+oBtn1.onmouseleave=function () {
+    oBtn1.style.background='#ffffff';
+    oBtn1.style.color='black';
+};
+oBtn2.onmouseleave=function () {
+    oBtn2.style.background='#ffffff';
+    oBtn2.style.color='black';
+};
+oBtn3.onmouseleave=function () {
+    oBtn3.style.background='#ffffff';
+    oBtn3.style.color='black';
+};
+oBtn4.onmouseleave=function () {
+    oBtn4.style.background='#ffffff';
+    oBtn4.style.color='black';
+};
+// 图片切换
+$('#typebox ul li').click(function () {
+    $('#typebox ul li').removeClass('active');
+     $('#ib').text('');
+
+    $(this).addClass('active');
+    $('#i-box>div').eq($(this).index()).addClass('active');
+
+    $.ajax({
+        url:'/lpkp',
+        data:{
+            tpye:$(this).text()
+        },
+        success:function (res) {
+
+            res.data.forEach(function (i, v) {
+                $('#ib').append('<div class="div1"> <img src="' + res.data[v].rp_img1 + '" class="imgn"> <!--遮罩--> <div class="dask"> <p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br> <p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p> </div> <p class="ip1">'+res.data[v].rp_theme+'</p> <p class="ip2">RECOMMEND SAMPLERECOMMEND</p> </div>')
+            });
+
+        }
+    })
+});
+// 遮罩
+
+
+    // $(".div1,.div2,.div3,.div4").hover(
+//     function () {
+//         alert(1)
+//
+//     },
+//     function () {
+//
+//         $(this).find(".dask").stop().animate({"top":-260,opacity:0},300)
+//     }
+//
+// );
+
+
+    // 分页
+    // 获取数据
+    function f() {
+    $.ajax({
+        url:'/lpkp',
+        data:{
+            tpye:'婚纱照'
+        },
+        success:function (res) {
+               console.log(res.data);
+                // console.log(res)
+            res.data.forEach(function (i,v) {
+                $('#ib').append('<div class="div1"> <img src="'+res.data[v].rp_img1+'" class="imgn"> <!--遮罩--> <div class="dask"> <p style="text-align: center;margin-top:30px;font-size: 18px">HUA YANG </p><br> <p style="font-size: 8px;text-align: center;margin-top: -20px">TRAVLE AROUND WORLD</p> </div> <p class="ip1">'+res.data[v].rp_theme+'</p> <p class="ip2">RECOMMEND SAMPLERECOMMEND</p> </div>');
+            })
+
+    }
+    })
+
+    }
+f();
+    // 遮罩
+$('#ib').on('mouseenter','div',(function () {
+
+    $(this).find(".dask").stop().delay(50).animate({"top":0,opacity:0.6},400)
+    // $('.ip1').css('color','red')
+
+
+}));
+
+$('#ib').on('mouseleave','div',(function () {
+
+    $(this).find(".dask").stop().animate({"top":-260,opacity:0},300)
+
+
+}));
+
+//点击不同的按钮跳不同的页面
+$('#btn1').click(function () {
+    type=1;
+    btnClicl();
+});
+$('#btn2').click(function () {
+    type=2;
+    btnClicl();
+});
+$('#btn3').click(function () {
+    type=3;
+    btnClicl();
+});
+$('#btn4').click(function () {
+    type=4;
+    btnClicl();
+});
+function btnClicl(){
+    $('#ib').on('click','div',function () {
+        switch (type) {
+            case 1:
+                location.href="./lpkp2.html";
+                break;
+            case 2:
+                location.href="./lpkp-family.html";
+                break;
+            case 3:
+                location.href="./lpkp-love.html";
+                break;
+            case 4:
+                location.href="./lpkp-friends.html";
+                break;
+        }
+        // return false;
+    })
+}
+    btnClicl();
+// 即时对话
+    $('#talk-close1').click(function () {
+        $('#talk').hide();
+        $('#smoll-talk').show();
+
+    });
+
+    $('#talk-close2').click(function () {
+        $('#smoll-talk').hide();
+        $('#talk').show();
+
+    });
+
+</script>
+</html>

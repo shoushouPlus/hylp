@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="001zhengque" unicode="&#58964;" d="M510.817 829.481c-247.634 0-444.257-199.506-444.257-445.481s199.409-445.476 445.389-445.476c245.98 0 445.491 199.404 445.491 445.476 0.010 245.975-199.071 445.481-446.623 445.481zM795.428 504.156s-271.452-287.227-306.14-321.935c-24.602-24.591-55.117-16.118-68.019-3.308l-193.838 177.536c-17.874 18.739-17.874 49.172 0 67.922 17.879 18.744 46.74 18.744 64.62 0l160.532-144.22c0 0.261 278.236 291.927 278.236 291.927 17.879 18.749 46.746 18.749 64.62 0 17.874-18.744 17.874-49.178-0.010-67.922z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

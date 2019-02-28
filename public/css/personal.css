@@ -1,0 +1,704 @@
+#nav {
+  width: 100%;
+  height: 62px;
+  margin: 0 auto;
+  background: black;
+  position: relative;
+}
+#nav .div1 {
+  width: 100px;
+  height: 62px;
+  margin-left: 100px;
+}
+#nav .phone {
+  width: 220px;
+  height: 62px;
+  position: absolute;
+  margin-left: 1300px;
+  margin-top: -62px;
+}
+#nav .phone img {
+  margin-top: 15px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-left: 70px;
+}
+#nav .phone p {
+  margin-left: 100px;
+  line-height: 62px;
+  text-align: center;
+  color: #65dac0;
+  position: absolute;
+}
+#nav .div2 {
+  width: 1000px;
+  height: 62px;
+  position: absolute;
+  margin-left: 400px;
+  margin-top: -62px;
+}
+#nav .div2 ul {
+  width: 1000px;
+  height: 62px;
+  position: absolute;
+}
+#nav .div2 ul li {
+  cursor: pointer;
+  width: 80px;
+  height: 62px;
+  float: left;
+  margin-left: 90px;
+  color: white;
+  line-height: 62px;
+  text-align: center;
+}
+#nav .div2 ul li a{
+  text-decoration:none;
+  color:snow;
+}
+#nav .div2 ul li:hover {
+  background: whitesmoke;
+  color: #B8AA9D;
+  cursor: pointer;
+  z-index: 33;
+}
+#nav .div2 ul li:hover a {
+  color: #B8AA9D;
+}
+
+
+.div3 {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.div3 img {
+  width: 100%;
+  height: 300px;
+}
+.bj {
+  width: 100%;
+  height: 800px;
+  background: #f0f0f0;
+}
+.l-div {
+  position: absolute;
+  width: 300px;
+  height: 650px;
+  background: white;
+  margin-left: 190px;
+  margin-top: 40px;
+}
+.l-div p {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.l-div .headimg {
+  width: 130px;
+  height: 130px;
+  margin-top: 2px;
+  margin-left: 80px;
+  border-radius: 50%;
+}
+.l-div .headimg img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.l-div .msg {
+  width: 150px;
+  height: 190px;
+  margin-left: 65px;
+}
+.l-div .change {
+  width: 92px;
+  height: 130px;
+  margin-left: 30px;
+}
+.l-div .change li {
+  margin-top: 15px;
+  margin-left: 17px;
+  cursor: pointer;
+}
+.l-div .Order {
+  width: 150px;
+  height: 100px;
+  margin-top: -34px;
+  margin-left: 65px;
+}
+.l-div .Order p {
+  font-size: 24px;
+}
+.l-div .Order .p2 {
+  font-size: 17px;
+  margin-left: 43px;
+  cursor: pointer;
+}
+.l-div .history {
+  width: 150px;
+  height: 100px;
+  margin-left: 65px;
+}
+.l-div .history p {
+  font-size: 24px;
+  margin-left: 30px;
+}
+#r-div-msg {
+  position: absolute;
+  width: 850px;
+  height: 648px;
+  background: white;
+  border: 1px solid #d5d5d5;
+  margin-left: 500px;
+  margin-top: 40px;
+}
+#r-div-msg .changemsg {
+  border: 1px solid #d5d5d5;
+  width: 850px;
+  height: 648px;
+}
+#r-div-msg .changemsg p {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+#r-div-msg .changemsg hr {
+  width: 810px;
+  margin-left: 20px;
+  margin-top: 10px;
+  border: none;
+  height: 2px;
+  background-color: #d5d5d5;
+}
+#r-div-msg .name {
+  width: 300px;
+  margin-left: 85px;
+  position: relative;
+}
+#r-div-msg .name p {
+  font-size: 17px;
+}
+#r-div-msg input {
+  margin-left: 70px;
+  margin-top: -22px;
+  position: absolute;
+  border-radius: 3px;
+  border: 1px solid #8c8c8c;
+  height: 19px;
+}
+#r-div-msg .d1 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  color: red;
+  margin-left: 237px;
+  margin-top: -19px;
+}
+#r-div-msg .myphone {
+  width: 300px;
+  height: 30px;
+  margin-left: 89px ;
+  margin-top: -501px;
+  position: absolute;
+}
+#r-div-msg .myphone p {
+  font-size: 17px;
+}
+#r-div-msg .myphone input {
+  margin-left: 70px;
+  margin-top: -22px;
+  position: absolute;
+  border-radius: 3px;
+  border: 1px solid #8c8c8c;
+  height: 19px;
+}
+#r-div-msg .myphone .d2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  color: red;
+  margin-left: 237px;
+  margin-top: -19px;
+}
+#r-div-msg .sex {
+  width: 300px;
+  height: 30px;
+  margin-left: 450px ;
+  margin-top: -573px;
+  position: absolute;
+}
+#r-div-msg .sex #sl1 {
+  width: 110px;
+  margin-left: 48px;
+  margin-top: -19px;
+  height: 19px;
+  border-radius: 3px;
+  position: absolute;
+  border: 1px solid #8c8c8c;
+}
+#r-div-msg .sex .d3 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  color: red;
+  margin-left: 165px;
+  margin-top: -17px;
+}
+#r-div-msg .local {
+  width: 400px;
+  height: 50px;
+  margin-left: 380px;
+  margin-top: -501px;
+  position: relative;
+}
+#r-div-msg .local p {
+  margin-left: 41px;
+  position: absolute;
+}
+#r-div-msg .local #province {
+  border-radius: 3px;
+  width: 100px;
+  height: 23px;
+  position: absolute;
+  margin-left: 120px;
+}
+#r-div-msg .local #city {
+  border-radius: 3px;
+  width: 100px;
+  height: 23px;
+  position: absolute;
+  margin-left: 253px;
+}
+#r-div-msg .pw {
+  position: relative;
+  width: 400px;
+  height: 130px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+#r-div-msg .pw p {
+  margin-left: -24px;
+  margin-top: 10px;
+  position: absolute;
+}
+#r-div-msg .pw #t1 {
+  width: 570px;
+  height: 62px;
+  resize: none;
+  margin-left: 60px;
+  margin-top: 8px;
+  position: absolute;
+}
+#r-div-msg .tips {
+  width: 618px;
+  height: 62px;
+  border: 1.5px solid #f7e9c6;
+  margin-left: 108px;
+  margin-top: 70px;
+  position: relative;
+}
+#r-div-msg .tips .tip1 {
+  width: 48px;
+  height: 62px;
+  position: absolute;
+  background: #ffd07c;
+}
+#r-div-msg .tips .tip1 p {
+  text-align: center;
+  margin-top: 5px;
+  color: snow;
+}
+#r-div-msg .tips .tip2 {
+  width: 570px;
+  height: 62px;
+  position: absolute;
+  background: #feffef;
+  margin-left: 48px;
+}
+#r-div-msg .tips .tip2 p {
+  font-size: 12px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+#r-div-pass {
+  border: 1px solid #d5d5d5;
+  display: none;
+  position: absolute;
+  width: 850px;
+  height: 648px;
+  background: white;
+  margin-left: 500px;
+  margin-top: -759px;
+}
+#r-div-pass .hed {
+  position: relative;
+}
+#r-div-pass p {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+#r-div-pass hr {
+  width: 810px;
+  margin-left: 20px;
+  margin-top: 9px;
+  border: none;
+  height: 1px;
+  background-color: #d5d5d5;
+}
+#r-div-pass .writephone {
+  width: 380px;
+  height: 30px ;
+  position: relative;
+  margin-left: 250px;
+  margin-top: 90px;
+}
+#r-div-pass .writephone p {
+  font-size: 17px;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+#r-div-pass .writephone input {
+  position: absolute;
+  height: 19px;
+  margin-left: 75px;
+  margin-top: 5px;
+  border-radius: 3px;
+  border: 1px solid #8c8c8c;
+}
+#r-div-pass .writephone .btn {
+  margin-left: 240px;
+  margin-top: 2px;
+  border: none;
+  background: #65dac0;
+  color: snow;
+  width: 80px;
+  height: 25px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#r-div-pass .writetest {
+  width: 300px;
+  height: 30px ;
+  position: relative;
+  margin-left: 250px;
+  margin-top: 20px;
+}
+#r-div-pass .writetest p {
+  font-size: 17px;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+#r-div-pass .writetest input {
+  position: absolute;
+  height: 19px;
+  margin-left: 75px;
+  margin-top: 5px;
+  border-radius: 3px;
+  border: 1px solid #8c8c8c;
+}
+#r-div-pass .testpass {
+  width: 300px;
+  height: 30px;
+  position: relative;
+  margin-left: 250px;
+  margin-top: 20px;
+}
+#r-div-pass .testpass p {
+  font-size: 17px;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+#r-div-pass .testpass input {
+  position: absolute;
+  height: 19px;
+  margin-left: 75px;
+  margin-top: 5px;
+  border-radius: 3px;
+  border: 1px solid #8c8c8c;
+}
+#r-div-pass .save {
+  position: absolute;
+  width: 156px;
+  height: 22px;
+  border: none;
+  background: #65dac0;
+  color: snow;
+  border-radius: 3px;
+  margin-left: 327px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#ch {
+  position: absolute;
+  width: 850px;
+  height: 650px;
+  background: white;
+  margin-left: 500px;
+  margin-top: -760px;
+  display: none;
+  border: 1px solid #d5d5d5;
+}
+#ch p {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+#ch hr {
+  width: 810px;
+  margin-left: 20px;
+  margin-top: 10px;
+  border: none;
+  height: 1px;
+  background-color: #d5d5d5;
+}
+#ch .sctp {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin-left: 300px;
+  margin-top: 40px;
+}
+#ch .sctp .smbox {
+  margin-left: 30px;
+  margin-top: 10px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  position: absolute;
+  background: #faf8f5;
+  border: 1px solid #cccccc;
+}
+#ch .sctp .yc {
+  position: absolute;
+  width: 110px;
+  height: 20px;
+  margin-top: -4px;
+  margin-left: -82px;
+  cursor: pointer;
+}
+#ch .sctp button {
+  width: 110px;
+  height: 20px;
+  position: absolute;
+  margin-top: 165px;
+  margin-left: 39px;
+  border: none;
+  border-radius: 3px;
+  background: #65dac0;
+  color: snow;
+  cursor: pointer;
+}
+#M {
+  display: none;
+  width: 850px;
+  height: 648px;
+  background: white;
+  border: 1.5px solid #d5d5d5;
+  position: absolute;
+  margin-left: 500px;
+  margin-top: 40px;
+  overflow: auto;
+}
+#M .state {
+  padding-left: 120px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#M .state span {
+  cursor: pointer;
+  color: #263a3a;
+  margin-right: 40px;
+}
+#M .state .waitForConsumeBtn {
+  color: red;
+}
+#M .mealInfo .parent img {
+  width: 350px;
+  height: 220px;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+#M .mealInfo .parent .mealInfoWord {
+  width: 440px;
+  height: 220px;
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  border-top: 1px solid #ccc;
+}
+#M .mealInfo .parent .mealInfoWord p {
+  margin-left: 50px;
+  margin-top: 10px;
+}
+#M .mealInfo .parent .mealInfoWord input {
+  background: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  margin-left: 300px;
+  margin-top: 40px;
+}
+#M .waitForComment {
+  display: none;
+  width: 100%;
+  overflow: auto;
+}
+#M .waitForComment .parent img {
+  width: 350px;
+  height: 220px;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+#M .waitForComment .parent .waitForComment-mealInfoWord {
+  width: 440px;
+  height: 220px;
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  border-top: 1px solid #ccc;
+}
+#M .waitForComment .parent .waitForComment-mealInfoWord p {
+  margin-left: 50px;
+  margin-top: 10px;
+}
+#M .waitForComment .parent .waitForComment-mealInfoWord input {
+  background: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  margin-left: 300px;
+  margin-top: 40px;
+}
+#M .addComment {
+  width: 850px;
+  height: 600px;
+  display: none;
+}
+#M .addComment .comment-head {
+  width: 850px;
+  height: 40px;
+  background: #ccc;
+}
+#M .addComment .comment-head .comment {
+  width: 60px;
+  height: 40px;
+  float: left;
+  margin-left: 380px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid #ccc;
+}
+#M .addComment .comment-head .return {
+  color: #1b6d85;
+  width: 60px;
+  border-radius: 5px;
+  float: right;
+  margin-top: 5px;
+  height: 44px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+#M .addComment .commentDescription {
+  height: 120px;
+}
+#M .addComment .commentDescription .wordDescription {
+  width: 850px;
+  height: 120px;
+  border: none;
+  margin-left: 4px;
+  line-height: 24px;
+  font-family: 宋体;
+  font-size: 16px;
+  border: solid 1px #ccc;
+  margin-top: -10px;
+  margin-left: -1px;
+}
+#M .addComment .commentDescription .addPicBtn {
+  width: 118px;
+  height: 120px;
+  float: right;
+  border: 1px solid black;
+}
+#M .addComment .addImgBox {
+  height: 80px;
+}
+#M .addComment .addImgBox .addImgBtn {
+  width: 80px;
+  height: 80px;
+  opacity: 0;
+  margin-left: 780px;
+}
+#M .addComment .addImgBox div {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #ccc;
+  border-top: none;
+  float: right;
+  margin-top: -80px;
+  font-size: 60px;
+  color: #ccc;
+  line-height: 60px;
+  text-align: center;
+}
+#M .addComment .addImgBox div span {
+  font-size: 12px;
+  display: block;
+  line-height: 14px;
+}
+#M .addComment .canvas {
+  width: 850px;
+  height: 300px;
+}
+#M .addComment .canvas img {
+  width: 240px;
+  height: 180px;
+  margin-top: 60px;
+  margin-left: 12px;
+  border-radius: 0;
+}
+#M .addComment .submit {
+  margin-top: 10px;
+  float: right;
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  background: #ccc;
+  margin-right: 10px;
+}
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+#box7 {
+  width: 1517px;
+  height: 260px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+#box7 h3 {
+  text-align: center;
+  color: #B8AA9D;
+  font-size: 36px;
+}
+#box7 .b-p1 {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  margin-top: 13px;
+}
+#box7 div {
+  margin-top: 30px;
+}
+/*# sourceMappingURL=personal.css.map */

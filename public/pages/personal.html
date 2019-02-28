@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员中心</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../css/personal.css" />
+    <script src="../dist/jquery-3.3.1.js"></script>
+    <!--<script src="https://unpkg.com/axios/dist/axios.min.js"></script>-->
+
+</head>
+
+<div id="box">
+<!--导航-->
+<div id="nav">
+    <!--两行文字-->
+    <div class="div1">
+    <p style="position: absolute;color: #eeeeee;font-size: 26px">花漾旅拍</p>
+    <p style="color: #eeeeee;position: absolute;margin-top: 37px;margin-left: 10px">HUAYANG</p>
+    </div>
+    <div class="phone">
+        <img src="../image/lpkp/phone.png" alt="">
+    <p>
+        18881206860
+    </p>
+    </div>
+    <!--几个li-->
+    <div class="div2">
+    <ul>
+        <li><a href="./../index.html">首页</a></li>
+        <li><a href="./../pages/lpkp.html">最新客片</a></li>
+        <li><a href="./../pages/wedding.html">婚纱推荐</a></li>
+        <li><a href="./../pages/aboutUs.html">关于我们</a></li>
+    </ul>
+
+    </div>
+</div>
+
+    <!--banner图-->
+<div class="div3">
+    <img src="../image/lpkp/baner.jpg" >
+</div>
+ <!--下面的背景-->
+<div class="bj">
+    <!--侧边栏-->
+<div class="l-div">
+    <div class="headimg">
+        <img src=""></div>
+
+    <div class="msg">
+    <p>基本资料</p>
+    <ul class="change">
+        <li id="cmsg">修改资料</li>
+        <li id="cpass">修改密码</li>
+        <li id="chead">修改头像</li>
+    </ul>
+    </div>
+    <div class="Order">
+        <p>我的订单</p>
+        <p class="p2">订单详情</p>
+    </div>
+<div class="history">
+<p>历史记录</p>
+</div>
+</div>
+    <!--订单详情-->
+    <div id="M">
+        <!--状态-->
+        <div class="state clearfix">
+            <span class="waitForConsumeBtn">待消费</span>
+            <span class="waitForCommentBtn">待评价</span>
+        </div>
+        <!--待消费套餐信息-->
+        <div class="mealInfo clearfix" data-index="">
+
+        </div>
+        <!--待评价套餐信息-->
+        <div class="waitForComment clearfix" data-index="">
+        </div>
+        <!--评价-->
+        <div class="addComment clearfix">
+            <div class="comment-head clearfix">
+                <p class="comment">评价</p>
+                <p class="return">返回</p>
+            </div>
+            <div  class="commentDescription clearfix">
+                <textarea class="wordDescription" type="text" placeholder="请说说您对本次旅拍的想法吧！"></textarea>
+            </div>
+            <div class="addImgBox clearfix">
+                <input type="file" class="addImgBtn" name="files" multiple>
+                <div>+<span>添加图片</span></div>
+            </div>
+            <div class="canvas clearfix">
+                <img src="" alt="" class="commentImg1">
+                <img src="" alt="" class="commentImg2">
+                <img src="" alt="" class="commentImg3">
+            </div>
+            <input type="button" value="提交" class="submit" data-index="">
+        </div>
+
+    </div>
+
+
+
+    <div id="r-div-msg">
+        <!--资料修改-->
+        <div class="changemsg" >
+            <p>个人资料</p>
+            <hr>
+            <div class="name">
+                <p>姓名:</p>
+                <input type="text" class="Name" id="name">
+                <div class="d1">*</div>
+            </div>
+        </div>
+        <!--手机号-->
+        <div class="myphone" >
+            <p>手机号:</p>
+            <input type="text" class="phone1" id="myPhone">
+            <div class="d2">*</div>
+        </div>
+        <!--性别-->
+        <div class="sex">
+            <p>性别:</p>
+            <select  id="sl1">
+                <option value="11">男</option>
+                <option value="22">女</option>
+            </select>
+            <div class="d3">*</div>
+        </div>
+        <!--所在地区-->
+        <div class="local">
+            <p>所在地区:</p>
+            <select name="province" id="province">
+                <option value="1">四川</option>
+                <option value="2">云南</option>
+                <option value="3">重庆</option>
+                <option value="4">浙江</option>
+                <option value="5">海南</option>
+            </select>
+            <select name="city" id="city">
+            </select>
+        </div>
+        <!--个性签名-->
+        <div class="pw">
+            <p>个性签名:</p>
+            <textarea  id="t1" cols="30" rows="10" class="speak"></textarea>
+        </div>
+        <button id="save" style="background:#00dfc0;margin-left:373px;margin-top: -20px;cursor:pointer;border-radius:3px;color:snow;width: 100px;height: 20px;border: none">确认修改</button>
+        <!--提示框-->
+        <div class="tips">
+            <div class="tip1">
+                <b><p>!</p></b>
+                <p style="margin-top: 10px">注明</p>
+            </div>
+            <div class="tip2" >
+                <p>1.请填写您个人真实信息，一经设置不可修改;</p>
+                <p>2.带有'*'的将作为联系您的重要依据，如信息不真实将不能正常为您服务.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--密码修改-->
+<div id="r-div-pass">
+    <div class="hed">
+    <p>修改密码</p>
+    <hr>
+    </div>
+    <div class="writephone">
+        <p>手机号:</p>
+        <input type="text" class="phoneipu">
+        <input type="button" class="btn" value="获取验证码" onclick="settime(this)">
+    </div>
+    <div class="writetest">
+        <p>验证码:</p>
+        <input type="text">
+
+    </div>
+    <div class="testpass">
+        <p>新密码:</p>
+        <input type="text">
+    </div>
+    <button class="save">保存</button>
+
+</div>
+
+    <!--头像修改-->
+    <div id="ch" >
+        <p>头像修改</p>
+        <hr>
+        <div class="sctp">
+        <div class="smbox"></div>
+            <input type="file"  class="yc" value="请选择文件" style="width: 60px;height: 30px;position: absolute; margin-top: 162px;margin-left: 170px">
+            <button id="Sc">上传图片</button>
+        </div>
+    </div>
+<!--尾部-->
+
+    <div id="box7">
+        <h3>Hua  Yang PhotoGrophy</h3>
+        <p class="b-p1">时尚 | 自由 | 轻奢 | 随性</p>
+        <p class="b-p1">三亚 / 厦门 / 丽江 / 大理 / 深圳 / 北京 / 上海 / 香港 / 澳门 / 香格里拉 / 桂林 / 杭州 / 大连 / 青岛/</p>
+        <p class="b-p1">成都 / 南充 / 峨眉 / 江油/ 眉山 / 资阳 / 西安 / 六盘水 / 攀枝花 / 广安 / 德阳 / 绵阳 / 遂宁 / 台湾</p>
+        <div>
+        </div>
+        <p class="b-p1">全国免费咨询电话：18881206860 （在线时间9：00-22：00)</p>
+        <p class="b-p1">客服联系微信：fengwei0618 （在线时间9：00-22：00）</p>
+    </div>
+</div>
+
+</body>
+<script src="../js/personal.js"></script>
+<script>
+
+    // $('.btn').click(function () {
+    //     var str=$('.phoneipu').val;
+    //     var reg=/^1[3-9]\d{9}$/;
+    //     // alert(reg.test(str))
+    //     if (reg.test(str)===true){
+    //
+    //     }
+    //
+    // });
+    // 倒计时
+    var countdown=60;
+    function settime(val) {
+        if (countdown == 0) {
+            val.removeAttribute("disabled");
+            val.value="免费获取验证码";
+            countdown = 60;
+        } else {
+            val.setAttribute("disabled", true);
+            val.value="重新发送(" + countdown + ")";
+            countdown--;
+            setTimeout(function() {
+                settime(val)
+            },1000)
+        }
+    }
+</script>
+</html>
